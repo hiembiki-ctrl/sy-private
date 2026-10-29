@@ -1,0 +1,1002 @@
+{
+ "prague/city/1/1": [
+  50.0903,
+  14.4005
+ ],
+ "prague/city/1/2": [
+  50.0909,
+  14.401
+ ],
+ "prague/city/1/3": [
+  50.0911,
+  14.4044
+ ],
+ "prague/city/2/1": [
+  50.0865,
+  14.4114
+ ],
+ "prague/city/2/2": [
+  50.087,
+  14.4208
+ ],
+ "prague/city/2/3": [
+  50.0897,
+  14.4155
+ ],
+ "prague/city/3/1": [
+  50.0813,
+  14.428
+ ],
+ "prague/city/3/2": [
+  50.0825,
+  14.4223
+ ],
+ "prague/city/3/3": [
+  50.064,
+  14.4195
+ ],
+ "prague/destination/쿠트나호라": [
+  49.9484,
+  15.268
+ ],
+ "prague/nearby/1/1": [
+  49.9438,
+  15.261
+ ],
+ "prague/nearby/1/2": [
+  49.9614,
+  15.2893
+ ],
+ "prague/nearby/1/3": [
+  49.945,
+  15.264
+ ],
+ "prague/destination/카를슈테인": [
+  49.9392,
+  14.1883
+ ],
+ "prague/nearby/2/1": [
+  49.9396,
+  14.188
+ ],
+ "prague/nearby/2/2": [
+  49.9394,
+  14.1876
+ ],
+ "prague/nearby/2/3": [
+  49.9387,
+  14.192
+ ],
+ "prague/destination/테레진": [
+  50.5114,
+  14.1502
+ ],
+ "prague/nearby/3/1": [
+  50.5047,
+  14.1507
+ ],
+ "prague/nearby/3/2": [
+  50.5115,
+  14.15
+ ],
+ "prague/nearby/3/3": [
+  50.5052,
+  14.1535
+ ],
+ "prague/destination/플젠": [
+  49.7475,
+  13.3776
+ ],
+ "prague/nearby/4/1": [
+  49.7467,
+  13.387
+ ],
+ "prague/nearby/4/2": [
+  49.7478,
+  13.3737
+ ],
+ "prague/nearby/4/3": [
+  49.7477,
+  13.3775
+ ],
+ "vienna/city/1/1": [
+  48.1845,
+  16.3122
+ ],
+ "vienna/city/1/2": [
+  48.1816,
+  16.3017
+ ],
+ "vienna/city/1/3": [
+  48.1985,
+  16.3626
+ ],
+ "vienna/city/2/1": [
+  48.2065,
+  16.3656
+ ],
+ "vienna/city/2/2": [
+  48.2086,
+  16.3731
+ ],
+ "vienna/city/2/3": [
+  48.2031,
+  16.369
+ ],
+ "vienna/city/3/1": [
+  48.1915,
+  16.3808
+ ],
+ "vienna/city/3/2": [
+  48.2108,
+  16.3655
+ ],
+ "vienna/city/3/3": [
+  48.2166,
+  16.3959
+ ],
+ "vienna/destination/브라티슬라바": [
+  48.1486,
+  17.1077
+ ],
+ "vienna/nearby/1/1": [
+  48.1421,
+  17.1001
+ ],
+ "vienna/nearby/1/2": [
+  48.145,
+  17.107
+ ],
+ "vienna/nearby/1/3": [
+  48.1385,
+  17.1018
+ ],
+ "vienna/destination/멜크": [
+  48.2283,
+  15.3327
+ ],
+ "vienna/nearby/2/1": [
+  48.2278,
+  15.334
+ ],
+ "vienna/nearby/2/2": [
+  48.229,
+  15.33
+ ],
+ "vienna/nearby/2/3": [
+  48.3948,
+  15.5198
+ ],
+ "vienna/destination/바덴 바이 빈": [
+  48.0067,
+  16.2306
+ ],
+ "vienna/nearby/3/1": [
+  48.0035,
+  16.23
+ ],
+ "vienna/nearby/3/2": [
+  48.0053,
+  16.2325
+ ],
+ "vienna/nearby/3/3": [
+  48.0058,
+  16.2293
+ ],
+ "vienna/destination/아이젠슈타트": [
+  47.8456,
+  16.5233
+ ],
+ "vienna/nearby/4/1": [
+  47.8458,
+  16.523
+ ],
+ "vienna/nearby/4/2": [
+  47.842,
+  16.5286
+ ],
+ "vienna/nearby/4/3": [
+  47.801,
+  16.672
+ ],
+ "berlin/city/1/1": [
+  52.5163,
+  13.3777
+ ],
+ "berlin/city/1/2": [
+  52.5139,
+  13.3787
+ ],
+ "berlin/city/1/3": [
+  52.5075,
+  13.3904
+ ],
+ "berlin/city/2/1": [
+  52.5169,
+  13.4019
+ ],
+ "berlin/city/2/2": [
+  52.519,
+  13.401
+ ],
+ "berlin/city/2/3": [
+  52.5205,
+  13.406
+ ],
+ "berlin/city/3/1": [
+  52.505,
+  13.4396
+ ],
+ "berlin/city/3/2": [
+  52.5352,
+  13.3903
+ ],
+ "berlin/city/3/3": [
+  52.5409,
+  13.4025
+ ],
+ "berlin/destination/포츠담": [
+  52.3906,
+  13.0645
+ ],
+ "berlin/nearby/1/1": [
+  52.404,
+  13.0383
+ ],
+ "berlin/nearby/1/2": [
+  52.4192,
+  13.0707
+ ],
+ "berlin/nearby/1/3": [
+  52.3996,
+  13.0614
+ ],
+ "berlin/destination/드레스덴": [
+  51.0504,
+  13.7373
+ ],
+ "berlin/nearby/2/1": [
+  51.0517,
+  13.7415
+ ],
+ "berlin/nearby/2/2": [
+  51.0533,
+  13.734
+ ],
+ "berlin/nearby/2/3": [
+  51.054,
+  13.744
+ ],
+ "berlin/destination/라이프치히": [
+  51.3397,
+  12.3731
+ ],
+ "berlin/nearby/3/1": [
+  51.3396,
+  12.3708
+ ],
+ "berlin/nearby/3/2": [
+  51.3125,
+  12.4133
+ ],
+ "berlin/nearby/3/3": [
+  51.3404,
+  12.3738
+ ],
+ "berlin/destination/슈프레발트": [
+  51.866,
+  13.97
+ ],
+ "berlin/nearby/4/1": [
+  51.87,
+  13.964
+ ],
+ "berlin/nearby/4/2": [
+  51.8618,
+  13.9894
+ ],
+ "berlin/nearby/4/3": [
+  51.881,
+  14.005
+ ],
+ "budapest/city/1/1": [
+  47.4962,
+  19.0396
+ ],
+ "budapest/city/1/2": [
+  47.5022,
+  19.035
+ ],
+ "budapest/city/1/3": [
+  47.5014,
+  19.034
+ ],
+ "budapest/city/2/1": [
+  47.5071,
+  19.0457
+ ],
+ "budapest/city/2/2": [
+  47.5009,
+  19.0538
+ ],
+ "budapest/city/2/3": [
+  47.4871,
+  19.0585
+ ],
+ "budapest/city/3/1": [
+  47.5189,
+  19.0825
+ ],
+ "budapest/city/3/2": [
+  47.515,
+  19.0773
+ ],
+ "budapest/city/3/3": [
+  47.495,
+  19.047
+ ],
+ "budapest/destination/센텐드레": [
+  47.6694,
+  19.0756
+ ],
+ "budapest/nearby/1/1": [
+  47.668,
+  19.076
+ ],
+ "budapest/nearby/1/2": [
+  47.6673,
+  19.0743
+ ],
+ "budapest/nearby/1/3": [
+  47.685,
+  19.042
+ ],
+ "budapest/destination/비셰그라드": [
+  47.7864,
+  18.97
+ ],
+ "budapest/nearby/2/1": [
+  47.792,
+  18.968
+ ],
+ "budapest/nearby/2/2": [
+  47.7867,
+  18.9742
+ ],
+ "budapest/nearby/2/3": [
+  47.789,
+  18.961
+ ],
+ "budapest/destination/에스테르곰": [
+  47.7928,
+  18.74
+ ],
+ "budapest/nearby/3/1": [
+  47.8014,
+  18.7388
+ ],
+ "budapest/nearby/3/2": [
+  47.7995,
+  18.741
+ ],
+ "budapest/nearby/3/3": [
+  47.792,
+  18.728
+ ],
+ "budapest/destination/에게르": [
+  47.9025,
+  20.3772
+ ],
+ "budapest/nearby/4/1": [
+  47.904,
+  20.381
+ ],
+ "budapest/nearby/4/2": [
+  47.881,
+  20.362
+ ],
+ "budapest/nearby/4/3": [
+  47.9014,
+  20.3783
+ ],
+ "athens/city/1/1": [
+  37.9715,
+  23.7267
+ ],
+ "athens/city/1/2": [
+  37.9684,
+  23.7285
+ ],
+ "athens/city/1/3": [
+  37.9733,
+  23.7288
+ ],
+ "athens/city/2/1": [
+  37.9747,
+  23.7219
+ ],
+ "athens/city/2/2": [
+  37.976,
+  23.7255
+ ],
+ "athens/city/2/3": [
+  37.9693,
+  23.733
+ ],
+ "athens/city/3/1": [
+  37.989,
+  23.7326
+ ],
+ "athens/city/3/2": [
+  37.9819,
+  23.7431
+ ],
+ "athens/city/3/3": [
+  37.9755,
+  23.7348
+ ],
+ "athens/destination/수니온 곶": [
+  37.651,
+  24.024
+ ],
+ "athens/nearby/1/1": [
+  37.6502,
+  24.0245
+ ],
+ "athens/nearby/1/2": [
+  37.6495,
+  24.0262
+ ],
+ "athens/nearby/1/3": [
+  37.72,
+  23.95
+ ],
+ "athens/destination/아이기나": [
+  37.746,
+  23.429
+ ],
+ "athens/nearby/2/1": [
+  37.7518,
+  23.5278
+ ],
+ "athens/nearby/2/2": [
+  37.7455,
+  23.431
+ ],
+ "athens/nearby/2/3": [
+  37.697,
+  23.46
+ ],
+ "athens/destination/코린토스": [
+  37.94,
+  22.932
+ ],
+ "athens/nearby/3/1": [
+  37.906,
+  22.88
+ ],
+ "athens/nearby/3/2": [
+  37.891,
+  22.8715
+ ],
+ "athens/nearby/3/3": [
+  37.933,
+  22.9877
+ ],
+ "athens/destination/나우플리오": [
+  37.5673,
+  22.8
+ ],
+ "athens/nearby/4/1": [
+  37.564,
+  22.8015
+ ],
+ "athens/nearby/4/2": [
+  37.5673,
+  22.8031
+ ],
+ "athens/nearby/4/3": [
+  37.7308,
+  22.7564
+ ],
+ "florence/city/1/1": [
+  43.7731,
+  11.256
+ ],
+ "florence/city/1/2": [
+  43.7757,
+  11.2538
+ ],
+ "florence/city/1/3": [
+  43.7769,
+  11.2588
+ ],
+ "florence/city/2/1": [
+  43.7678,
+  11.2553
+ ],
+ "florence/city/2/2": [
+  43.768,
+  11.2531
+ ],
+ "florence/city/2/3": [
+  43.7653,
+  11.25
+ ],
+ "florence/city/3/1": [
+  43.7629,
+  11.265
+ ],
+ "florence/city/3/2": [
+  43.7597,
+  11.2653
+ ],
+ "florence/city/3/3": [
+  43.7664,
+  11.247
+ ],
+ "florence/destination/피사": [
+  43.7228,
+  10.4017
+ ],
+ "florence/nearby/1/1": [
+  43.723,
+  10.3966
+ ],
+ "florence/nearby/1/2": [
+  43.723,
+  10.395
+ ],
+ "florence/nearby/1/3": [
+  43.7158,
+  10.4003
+ ],
+ "florence/destination/시에나": [
+  43.3186,
+  11.3306
+ ],
+ "florence/nearby/2/1": [
+  43.3186,
+  11.3318
+ ],
+ "florence/nearby/2/2": [
+  43.3175,
+  11.3287
+ ],
+ "florence/nearby/2/3": [
+  43.3185,
+  11.3322
+ ],
+ "florence/destination/산지미냐노": [
+  43.4677,
+  11.0432
+ ],
+ "florence/nearby/3/1": [
+  43.4678,
+  11.0434
+ ],
+ "florence/nearby/3/2": [
+  43.4682,
+  11.043
+ ],
+ "florence/nearby/3/3": [
+  43.4688,
+  11.0425
+ ],
+ "florence/destination/루카": [
+  43.8429,
+  10.5027
+ ],
+ "florence/nearby/4/1": [
+  43.847,
+  10.501
+ ],
+ "florence/nearby/4/2": [
+  43.8423,
+  10.5068
+ ],
+ "florence/nearby/4/3": [
+  43.8441,
+  10.5057
+ ],
+ "venice/city/1/1": [
+  45.434,
+  12.3388
+ ],
+ "venice/city/1/2": [
+  45.4345,
+  12.3397
+ ],
+ "venice/city/1/3": [
+  45.4337,
+  12.3403
+ ],
+ "venice/city/2/1": [
+  45.438,
+  12.3359
+ ],
+ "venice/city/2/2": [
+  45.44,
+  12.3345
+ ],
+ "venice/city/2/3": [
+  45.4366,
+  12.3352
+ ],
+ "venice/city/3/1": [
+  45.4311,
+  12.3279
+ ],
+ "venice/city/3/2": [
+  45.4306,
+  12.3347
+ ],
+ "venice/city/3/3": [
+  45.458,
+  12.3527
+ ],
+ "venice/destination/부라노": [
+  45.4851,
+  12.4168
+ ],
+ "venice/nearby/1/1": [
+  45.4849,
+  12.4175
+ ],
+ "venice/nearby/1/2": [
+  45.4853,
+  12.4163
+ ],
+ "venice/nearby/1/3": [
+  45.498,
+  12.418
+ ],
+ "venice/destination/파도바": [
+  45.4064,
+  11.8768
+ ],
+ "venice/nearby/2/1": [
+  45.4117,
+  11.8792
+ ],
+ "venice/nearby/2/2": [
+  45.3978,
+  11.8809
+ ],
+ "venice/nearby/2/3": [
+  45.3987,
+  11.8752
+ ],
+ "venice/destination/베로나": [
+  45.4384,
+  10.9916
+ ],
+ "venice/nearby/3/1": [
+  45.439,
+  10.9944
+ ],
+ "venice/nearby/3/2": [
+  45.4419,
+  10.9979
+ ],
+ "venice/nearby/3/3": [
+  45.4472,
+  10.9993
+ ],
+ "venice/destination/비첸차": [
+  45.5455,
+  11.5471
+ ],
+ "venice/nearby/4/1": [
+  45.5473,
+  11.5455
+ ],
+ "venice/nearby/4/2": [
+  45.5492,
+  11.5472
+ ],
+ "venice/nearby/4/3": [
+  45.5336,
+  11.56
+ ],
+ "edinburgh/city/1/1": [
+  55.9486,
+  -3.1999
+ ],
+ "edinburgh/city/1/2": [
+  55.9503,
+  -3.1875
+ ],
+ "edinburgh/city/1/3": [
+  55.9495,
+  -3.1909
+ ],
+ "edinburgh/city/2/1": [
+  55.9526,
+  -3.1722
+ ],
+ "edinburgh/city/2/2": [
+  55.9553,
+  -3.1835
+ ],
+ "edinburgh/city/2/3": [
+  55.9441,
+  -3.1618
+ ],
+ "edinburgh/city/3/1": [
+  55.9524,
+  -3.1934
+ ],
+ "edinburgh/city/3/2": [
+  55.9509,
+  -3.196
+ ],
+ "edinburgh/city/3/3": [
+  55.9487,
+  -3.197
+ ],
+ "edinburgh/destination/스털링": [
+  56.1165,
+  -3.9369
+ ],
+ "edinburgh/nearby/1/1": [
+  56.1238,
+  -3.9475
+ ],
+ "edinburgh/nearby/1/2": [
+  56.1393,
+  -3.9186
+ ],
+ "edinburgh/nearby/1/3": [
+  56.096,
+  -3.934
+ ],
+ "edinburgh/destination/글래스고": [
+  55.8642,
+  -4.2518
+ ],
+ "edinburgh/nearby/2/1": [
+  55.8689,
+  -4.2915
+ ],
+ "edinburgh/nearby/2/2": [
+  55.862,
+  -4.2347
+ ],
+ "edinburgh/nearby/2/3": [
+  55.8609,
+  -4.249
+ ],
+ "edinburgh/destination/세인트앤드루스": [
+  56.3398,
+  -2.7967
+ ],
+ "edinburgh/nearby/3/1": [
+  56.343,
+  -2.804
+ ],
+ "edinburgh/nearby/3/2": [
+  56.34,
+  -2.7897
+ ],
+ "edinburgh/nearby/3/3": [
+  56.3385,
+  -2.7845
+ ],
+ "edinburgh/destination/던디": [
+  56.462,
+  -2.9707
+ ],
+ "edinburgh/nearby/4/1": [
+  56.4573,
+  -2.9672
+ ],
+ "edinburgh/nearby/4/2": [
+  56.4563,
+  -2.9665
+ ],
+ "edinburgh/nearby/4/3": [
+  56.474,
+  -2.989
+ ],
+ "reykjavik/city/1/1": [
+  64.1417,
+  -21.9266
+ ],
+ "reykjavik/city/1/2": [
+  64.1455,
+  -21.923
+ ],
+ "reykjavik/city/1/3": [
+  64.1503,
+  -21.9327
+ ],
+ "reykjavik/city/2/1": [
+  64.1476,
+  -21.922
+ ],
+ "reykjavik/city/2/2": [
+  64.152,
+  -21.946
+ ],
+ "reykjavik/city/2/3": [
+  64.1546,
+  -21.9506
+ ],
+ "reykjavik/city/3/1": [
+  64.1292,
+  -21.919
+ ],
+ "reykjavik/city/3/2": [
+  64.144,
+  -21.879
+ ],
+ "reykjavik/city/3/3": [
+  64.142,
+  -21.949
+ ],
+ "reykjavik/destination/싱벨리르 국립공원": [
+  64.2559,
+  -21.1299
+ ],
+ "reykjavik/nearby/1/1": [
+  64.2575,
+  -21.125
+ ],
+ "reykjavik/nearby/1/2": [
+  64.2555,
+  -21.117
+ ],
+ "reykjavik/nearby/1/3": [
+  64.2625,
+  -21.1215
+ ],
+ "reykjavik/destination/게이시르": [
+  64.311,
+  -20.3
+ ],
+ "reykjavik/nearby/2/1": [
+  64.3104,
+  -20.3024
+ ],
+ "reykjavik/nearby/2/2": [
+  64.3271,
+  -20.1199
+ ],
+ "reykjavik/nearby/2/3": [
+  64.041,
+  -20.885
+ ],
+ "reykjavik/destination/레이캬네스 반도": [
+  63.85,
+  -22.55
+ ],
+ "reykjavik/nearby/3/1": [
+  63.88,
+  -22.4495
+ ],
+ "reykjavik/nearby/3/2": [
+  63.814,
+  -22.68
+ ],
+ "reykjavik/nearby/3/3": [
+  63.8197,
+  -22.6853
+ ],
+ "reykjavik/destination/보르가르네스": [
+  64.538,
+  -21.92
+ ],
+ "reykjavik/nearby/4/1": [
+  64.702,
+  -20.977
+ ],
+ "reykjavik/nearby/4/2": [
+  64.738,
+  -20.94
+ ],
+ "reykjavik/nearby/4/3": [
+  64.665,
+  -21.294
+ ],
+ "los-angeles/city/1/1": [
+  34.1184,
+  -118.3004
+ ],
+ "los-angeles/city/1/2": [
+  34.1016,
+  -118.3267
+ ],
+ "los-angeles/city/1/3": [
+  34.1381,
+  -118.3534
+ ],
+ "los-angeles/city/2/1": [
+  34.0092,
+  -118.4973
+ ],
+ "los-angeles/city/2/2": [
+  33.985,
+  -118.4695
+ ],
+ "los-angeles/city/2/3": [
+  34.001,
+  -118.483
+ ],
+ "los-angeles/city/3/1": [
+  34.078,
+  -118.4741
+ ],
+ "los-angeles/city/3/2": [
+  34.0674,
+  -118.4
+ ],
+ "los-angeles/city/3/3": [
+  34.0723,
+  -118.3604
+ ],
+ "los-angeles/destination/샌타바버라": [
+  34.4208,
+  -119.6982
+ ],
+ "los-angeles/nearby/1/1": [
+  34.438,
+  -119.7135
+ ],
+ "los-angeles/nearby/1/2": [
+  34.4241,
+  -119.7021
+ ],
+ "los-angeles/nearby/1/3": [
+  34.4097,
+  -119.685
+ ],
+ "los-angeles/destination/팜스프링스": [
+  33.8303,
+  -116.5453
+ ],
+ "los-angeles/nearby/2/1": [
+  33.837,
+  -116.604
+ ],
+ "los-angeles/nearby/2/2": [
+  33.764,
+  -116.547
+ ],
+ "los-angeles/nearby/2/3": [
+  33.824,
+  -116.5462
+ ],
+ "los-angeles/destination/카탈리나섬": [
+  33.3428,
+  -118.3278
+ ],
+ "los-angeles/nearby/3/1": [
+  33.343,
+  -118.327
+ ],
+ "los-angeles/nearby/3/2": [
+  33.3452,
+  -118.3235
+ ],
+ "los-angeles/nearby/3/3": [
+  33.3425,
+  -118.3262
+ ],
+ "los-angeles/destination/애너하임": [
+  33.8366,
+  -117.9143
+ ],
+ "los-angeles/nearby/4/1": [
+  33.8121,
+  -117.919
+ ],
+ "los-angeles/nearby/4/2": [
+  33.8066,
+  -117.919
+ ],
+ "los-angeles/nearby/4/3": [
+  33.809,
+  -117.925
+ ]
+}

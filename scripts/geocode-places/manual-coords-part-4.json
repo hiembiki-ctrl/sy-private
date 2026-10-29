@@ -1,0 +1,1002 @@
+{
+ "san-francisco/city/1/1": [
+  37.8199,
+  -122.4783
+ ],
+ "san-francisco/city/1/2": [
+  37.8042,
+  -122.4658
+ ],
+ "san-francisco/city/1/3": [
+  37.8029,
+  -122.4484
+ ],
+ "san-francisco/city/2/1": [
+  37.808,
+  -122.4177
+ ],
+ "san-francisco/city/2/2": [
+  37.8267,
+  -122.423
+ ],
+ "san-francisco/city/2/3": [
+  37.8021,
+  -122.4187
+ ],
+ "san-francisco/city/3/1": [
+  37.7845,
+  -122.4079
+ ],
+ "san-francisco/city/3/2": [
+  37.7941,
+  -122.4078
+ ],
+ "san-francisco/city/3/3": [
+  37.7955,
+  -122.3937
+ ],
+ "san-francisco/destination/소살리토": [
+  37.8591,
+  -122.4853
+ ],
+ "san-francisco/nearby/1/1": [
+  37.856,
+  -122.485
+ ],
+ "san-francisco/nearby/1/2": [
+  37.897,
+  -122.5811
+ ],
+ "san-francisco/nearby/1/3": [
+  37.829,
+  -122.48
+ ],
+ "san-francisco/destination/나파 밸리": [
+  38.2975,
+  -122.2869
+ ],
+ "san-francisco/nearby/2/1": [
+  38.438,
+  -122.409
+ ],
+ "san-francisco/nearby/2/2": [
+  38.296,
+  -122.283
+ ],
+ "san-francisco/nearby/2/3": [
+  38.4016,
+  -122.3611
+ ],
+ "san-francisco/destination/버클리": [
+  37.8715,
+  -122.273
+ ],
+ "san-francisco/nearby/3/1": [
+  37.8721,
+  -122.2578
+ ],
+ "san-francisco/nearby/3/2": [
+  37.8665,
+  -122.2587
+ ],
+ "san-francisco/nearby/3/3": [
+  37.8812,
+  -122.267
+ ],
+ "san-francisco/destination/샌타크루즈": [
+  36.9741,
+  -122.0308
+ ],
+ "san-francisco/nearby/4/1": [
+  36.9643,
+  -122.0183
+ ],
+ "san-francisco/nearby/4/2": [
+  36.9511,
+  -122.0516
+ ],
+ "san-francisco/nearby/4/3": [
+  37.042,
+  -122.064
+ ],
+ "mexico-city/city/1/1": [
+  19.434,
+  -99.1332
+ ],
+ "mexico-city/city/1/2": [
+  19.435,
+  -99.1313
+ ],
+ "mexico-city/city/1/3": [
+  19.4326,
+  -99.1295
+ ],
+ "mexico-city/city/2/1": [
+  19.3551,
+  -99.1626
+ ],
+ "mexico-city/city/2/2": [
+  19.35,
+  -99.162
+ ],
+ "mexico-city/city/2/3": [
+  19.257,
+  -99.103
+ ],
+ "mexico-city/city/3/1": [
+  19.426,
+  -99.1861
+ ],
+ "mexico-city/city/3/2": [
+  19.4204,
+  -99.1819
+ ],
+ "mexico-city/city/3/3": [
+  19.4115,
+  -99.173
+ ],
+ "mexico-city/destination/테오티우아칸": [
+  19.685,
+  -98.845
+ ],
+ "mexico-city/nearby/1/1": [
+  19.6926,
+  -98.8438
+ ],
+ "mexico-city/nearby/1/2": [
+  19.699,
+  -98.844
+ ],
+ "mexico-city/nearby/1/3": [
+  19.68,
+  -98.85
+ ],
+ "mexico-city/destination/푸에블라": [
+  19.0414,
+  -98.2063
+ ],
+ "mexico-city/nearby/2/1": [
+  19.0436,
+  -98.198
+ ],
+ "mexico-city/nearby/2/2": [
+  19.058,
+  -98.302
+ ],
+ "mexico-city/nearby/2/3": [
+  19.045,
+  -98.195
+ ],
+ "mexico-city/destination/쿠에르나바카": [
+  18.9186,
+  -99.2342
+ ],
+ "mexico-city/nearby/3/1": [
+  18.9235,
+  -99.235
+ ],
+ "mexico-city/nearby/3/2": [
+  18.919,
+  -99.2338
+ ],
+ "mexico-city/nearby/3/3": [
+  18.919,
+  -99.2328
+ ],
+ "mexico-city/destination/톨루카": [
+  19.2826,
+  -99.6557
+ ],
+ "mexico-city/nearby/4/1": [
+  19.2921,
+  -99.6556
+ ],
+ "mexico-city/nearby/4/2": [
+  19.2905,
+  -99.656
+ ],
+ "mexico-city/nearby/4/3": [
+  19.1083,
+  -99.758
+ ],
+ "rio-de-janeiro/city/1/1": [
+  -22.9519,
+  -43.2105
+ ],
+ "rio-de-janeiro/city/1/2": [
+  -22.968,
+  -43.224
+ ],
+ "rio-de-janeiro/city/1/3": [
+  -22.9895,
+  -43.1925
+ ],
+ "rio-de-janeiro/city/2/1": [
+  -22.9486,
+  -43.1566
+ ],
+ "rio-de-janeiro/city/2/2": [
+  -22.9711,
+  -43.1822
+ ],
+ "rio-de-janeiro/city/2/3": [
+  -22.9857,
+  -43.187
+ ],
+ "rio-de-janeiro/city/3/1": [
+  -22.9154,
+  -43.1792
+ ],
+ "rio-de-janeiro/city/3/2": [
+  -22.913,
+  -43.1805
+ ],
+ "rio-de-janeiro/city/3/3": [
+  -22.8944,
+  -43.1799
+ ],
+ "rio-de-janeiro/destination/페트로폴리스": [
+  -22.505,
+  -43.1789
+ ],
+ "rio-de-janeiro/nearby/1/1": [
+  -22.5105,
+  -43.174
+ ],
+ "rio-de-janeiro/nearby/1/2": [
+  -22.512,
+  -43.176
+ ],
+ "rio-de-janeiro/nearby/1/3": [
+  -22.523,
+  -43.18
+ ],
+ "rio-de-janeiro/destination/니테로이": [
+  -22.8832,
+  -43.1034
+ ],
+ "rio-de-janeiro/nearby/2/1": [
+  -22.9073,
+  -43.1255
+ ],
+ "rio-de-janeiro/nearby/2/2": [
+  -22.938,
+  -43.1315
+ ],
+ "rio-de-janeiro/nearby/2/3": [
+  -22.906,
+  -43.11
+ ],
+ "rio-de-janeiro/destination/테레조폴리스": [
+  -22.412,
+  -42.966
+ ],
+ "rio-de-janeiro/nearby/3/1": [
+  -22.457,
+  -43
+ ],
+ "rio-de-janeiro/nearby/3/2": [
+  -22.464,
+  -43.002
+ ],
+ "rio-de-janeiro/nearby/3/3": [
+  -22.426,
+  -42.983
+ ],
+ "rio-de-janeiro/destination/사쿠아레마": [
+  -22.92,
+  -42.51
+ ],
+ "rio-de-janeiro/nearby/4/1": [
+  -22.94,
+  -42.48
+ ],
+ "rio-de-janeiro/nearby/4/2": [
+  -22.927,
+  -42.509
+ ],
+ "rio-de-janeiro/nearby/4/3": [
+  -22.9,
+  -42.52
+ ],
+ "buenos-aires/city/1/1": [
+  -34.6081,
+  -58.3731
+ ],
+ "buenos-aires/city/1/2": [
+  -34.6205,
+  -58.373
+ ],
+ "buenos-aires/city/1/3": [
+  -34.6089,
+  -58.3792
+ ],
+ "buenos-aires/city/2/1": [
+  -34.5875,
+  -58.3933
+ ],
+ "buenos-aires/city/2/2": [
+  -34.5958,
+  -58.3944
+ ],
+ "buenos-aires/city/2/3": [
+  -34.574,
+  -58.418
+ ],
+ "buenos-aires/city/3/1": [
+  -34.6393,
+  -58.3629
+ ],
+ "buenos-aires/city/3/2": [
+  -34.6356,
+  -58.3647
+ ],
+ "buenos-aires/city/3/3": [
+  -34.615,
+  -58.381
+ ],
+ "buenos-aires/destination/티그레": [
+  -34.426,
+  -58.5797
+ ],
+ "buenos-aires/nearby/1/1": [
+  -34.421,
+  -58.581
+ ],
+ "buenos-aires/nearby/1/2": [
+  -34.409,
+  -58.579
+ ],
+ "buenos-aires/nearby/1/3": [
+  -34.4262,
+  -58.5707
+ ],
+ "buenos-aires/destination/콜로니아 델 사크라멘토": [
+  -34.4626,
+  -57.84
+ ],
+ "buenos-aires/nearby/2/1": [
+  -34.4745,
+  -57.853
+ ],
+ "buenos-aires/nearby/2/2": [
+  -34.4727,
+  -57.8517
+ ],
+ "buenos-aires/nearby/2/3": [
+  -34.469,
+  -57.847
+ ],
+ "buenos-aires/destination/라플라타": [
+  -34.9205,
+  -57.9545
+ ],
+ "buenos-aires/nearby/3/1": [
+  -34.9215,
+  -57.949
+ ],
+ "buenos-aires/nearby/3/2": [
+  -34.9091,
+  -57.9371
+ ],
+ "buenos-aires/nearby/3/3": [
+  -34.915,
+  -57.933
+ ],
+ "buenos-aires/destination/산안토니오 데 아레코": [
+  -34.25,
+  -59.47
+ ],
+ "buenos-aires/nearby/4/1": [
+  -34.254,
+  -59.47
+ ],
+ "buenos-aires/nearby/4/2": [
+  -34.24,
+  -59.46
+ ],
+ "buenos-aires/nearby/4/3": [
+  -34.247,
+  -59.467
+ ],
+ "vancouver/city/1/1": [
+  49.3017,
+  -123.1417
+ ],
+ "vancouver/city/1/2": [
+  49.2845,
+  -123.1089
+ ],
+ "vancouver/city/1/3": [
+  49.2888,
+  -123.1111
+ ],
+ "vancouver/city/2/1": [
+  49.2712,
+  -123.134
+ ],
+ "vancouver/city/2/2": [
+  49.2737,
+  -123.156
+ ],
+ "vancouver/city/2/3": [
+  49.2756,
+  -123.145
+ ],
+ "vancouver/city/3/1": [
+  49.343,
+  -123.115
+ ],
+ "vancouver/city/3/2": [
+  49.3797,
+  -123.081
+ ],
+ "vancouver/city/3/3": [
+  49.342,
+  -123.016
+ ],
+ "vancouver/destination/빅토리아": [
+  48.4284,
+  -123.3656
+ ],
+ "vancouver/nearby/1/1": [
+  48.565,
+  -123.469
+ ],
+ "vancouver/nearby/1/2": [
+  48.4197,
+  -123.3703
+ ],
+ "vancouver/nearby/1/3": [
+  48.4235,
+  -123.3685
+ ],
+ "vancouver/destination/휘슬러": [
+  50.1163,
+  -122.9574
+ ],
+ "vancouver/nearby/2/1": [
+  50.084,
+  -122.949
+ ],
+ "vancouver/nearby/2/2": [
+  50.116,
+  -122.954
+ ],
+ "vancouver/nearby/2/3": [
+  50.1135,
+  -122.9565
+ ],
+ "vancouver/destination/스쿼미시": [
+  49.7016,
+  -123.1558
+ ],
+ "vancouver/nearby/3/1": [
+  49.682,
+  -123.156
+ ],
+ "vancouver/nearby/3/2": [
+  49.67,
+  -123.155
+ ],
+ "vancouver/nearby/3/3": [
+  49.685,
+  -123.145
+ ],
+ "vancouver/destination/리치먼드": [
+  49.1666,
+  -123.1336
+ ],
+ "vancouver/nearby/4/1": [
+  49.126,
+  -123.185
+ ],
+ "vancouver/nearby/4/2": [
+  49.183,
+  -123.148
+ ],
+ "vancouver/nearby/4/3": [
+  49.174,
+  -123.15
+ ],
+ "havana/city/1/1": [
+  23.1385,
+  -82.3503
+ ],
+ "havana/city/1/2": [
+  23.141,
+  -82.351
+ ],
+ "havana/city/1/3": [
+  23.1415,
+  -82.3517
+ ],
+ "havana/city/2/1": [
+  23.1352,
+  -82.3599
+ ],
+ "havana/city/2/2": [
+  23.142,
+  -82.359
+ ],
+ "havana/city/2/3": [
+  23.145,
+  -82.37
+ ],
+ "havana/city/3/1": [
+  23.15,
+  -82.3565
+ ],
+ "havana/city/3/2": [
+  23.153,
+  -82.351
+ ],
+ "havana/city/3/3": [
+  23.137,
+  -82.359
+ ],
+ "havana/destination/바라데로": [
+  23.154,
+  -81.251
+ ],
+ "havana/nearby/1/1": [
+  23.145,
+  -81.265
+ ],
+ "havana/nearby/1/2": [
+  23.095,
+  -81.303
+ ],
+ "havana/nearby/1/3": [
+  23.158,
+  -81.264
+ ],
+ "havana/destination/비냘레스": [
+  22.6186,
+  -83.708
+ ],
+ "havana/nearby/2/1": [
+  22.63,
+  -83.726
+ ],
+ "havana/nearby/2/2": [
+  22.648,
+  -83.745
+ ],
+ "havana/nearby/2/3": [
+  22.6,
+  -83.72
+ ],
+ "havana/destination/마탄사스": [
+  23.0411,
+  -81.5775
+ ],
+ "havana/nearby/3/1": [
+  23.03,
+  -81.55
+ ],
+ "havana/nearby/3/2": [
+  23.0427,
+  -81.5772
+ ],
+ "havana/nearby/3/3": [
+  23.0423,
+  -81.576
+ ],
+ "havana/destination/소로아": [
+  22.7956,
+  -83.0069
+ ],
+ "havana/nearby/4/1": [
+  22.797,
+  -83.012
+ ],
+ "havana/nearby/4/2": [
+  22.79,
+  -83.01
+ ],
+ "havana/nearby/4/3": [
+  22.793,
+  -83.005
+ ],
+ "cartagena/city/1/1": [
+  10.4235,
+  -75.548
+ ],
+ "cartagena/city/1/2": [
+  10.4228,
+  -75.5513
+ ],
+ "cartagena/city/1/3": [
+  10.424,
+  -75.5508
+ ],
+ "cartagena/city/2/1": [
+  10.422,
+  -75.539
+ ],
+ "cartagena/city/2/2": [
+  10.42,
+  -75.528
+ ],
+ "cartagena/city/2/3": [
+  10.421,
+  -75.547
+ ],
+ "cartagena/city/3/1": [
+  10.4244,
+  -75.5515
+ ],
+ "cartagena/city/3/2": [
+  10.4232,
+  -75.552
+ ],
+ "cartagena/city/3/3": [
+  10.401,
+  -75.557
+ ],
+ "cartagena/destination/로사리오 제도": [
+  10.17,
+  -75.74
+ ],
+ "cartagena/nearby/1/1": [
+  10.18,
+  -75.74
+ ],
+ "cartagena/nearby/1/2": [
+  10.165,
+  -75.755
+ ],
+ "cartagena/nearby/1/3": [
+  10.1749,
+  -75.7499
+ ],
+ "cartagena/destination/바루 섬": [
+  10.25,
+  -75.6
+ ],
+ "cartagena/nearby/2/1": [
+  10.23,
+  -75.61
+ ],
+ "cartagena/nearby/2/2": [
+  10.265,
+  -75.58
+ ],
+ "cartagena/nearby/2/3": [
+  10.235,
+  -75.605
+ ],
+ "cartagena/destination/산 바실리오 데 팔렌케": [
+  10.1049,
+  -75.153
+ ],
+ "cartagena/nearby/3/1": [
+  10.1049,
+  -75.153
+ ],
+ "cartagena/nearby/3/2": [
+  10.1052,
+  -75.1527
+ ],
+ "cartagena/nearby/3/3": [
+  10.1045,
+  -75.154
+ ],
+ "cartagena/destination/바랑키야": [
+  10.9639,
+  -74.7964
+ ],
+ "cartagena/nearby/4/1": [
+  11.001,
+  -74.78
+ ],
+ "cartagena/nearby/4/2": [
+  10.984,
+  -74.787
+ ],
+ "cartagena/nearby/4/3": [
+  10.9895,
+  -74.788
+ ],
+ "cairo/city/1/1": [
+  29.9792,
+  31.1342
+ ],
+ "cairo/city/1/2": [
+  29.9753,
+  31.1376
+ ],
+ "cairo/city/1/3": [
+  29.994,
+  31.119
+ ],
+ "cairo/city/2/1": [
+  30.0475,
+  31.2625
+ ],
+ "cairo/city/2/2": [
+  30.0456,
+  31.263
+ ],
+ "cairo/city/2/3": [
+  30.053,
+  31.2615
+ ],
+ "cairo/city/3/1": [
+  30.0287,
+  31.2599
+ ],
+ "cairo/city/3/2": [
+  30.005,
+  31.231
+ ],
+ "cairo/city/3/3": [
+  30.043,
+  31.23
+ ],
+ "cairo/destination/사카라": [
+  29.868,
+  31.218
+ ],
+ "cairo/nearby/1/1": [
+  29.8713,
+  31.2165
+ ],
+ "cairo/nearby/1/2": [
+  29.873,
+  31.217
+ ],
+ "cairo/nearby/1/3": [
+  29.866,
+  31.215
+ ],
+ "cairo/destination/멤피스": [
+  29.844,
+  31.254
+ ],
+ "cairo/nearby/2/1": [
+  29.849,
+  31.255
+ ],
+ "cairo/nearby/2/2": [
+  29.8505,
+  31.2565
+ ],
+ "cairo/nearby/2/3": [
+  29.847,
+  31.253
+ ],
+ "cairo/destination/알렉산드리아": [
+  31.2001,
+  29.9187
+ ],
+ "cairo/nearby/3/1": [
+  31.2089,
+  29.9092
+ ],
+ "cairo/nearby/3/2": [
+  31.2139,
+  29.8853
+ ],
+ "cairo/nearby/3/3": [
+  31.2,
+  29.925
+ ],
+ "cairo/destination/파이윰": [
+  29.3,
+  30.5
+ ],
+ "cairo/nearby/4/1": [
+  29.27,
+  30.03
+ ],
+ "cairo/nearby/4/2": [
+  29.19,
+  30.4
+ ],
+ "cairo/nearby/4/3": [
+  29.458,
+  30.66
+ ],
+ "sydney/city/1/1": [
+  -33.8568,
+  151.2153
+ ],
+ "sydney/city/1/2": [
+  -33.8642,
+  151.2166
+ ],
+ "sydney/city/1/3": [
+  -33.8523,
+  151.2108
+ ],
+ "sydney/city/2/1": [
+  -33.859,
+  151.209
+ ],
+ "sydney/city/2/2": [
+  -33.8704,
+  151.2089
+ ],
+ "sydney/city/2/3": [
+  -33.8693,
+  151.1983
+ ],
+ "sydney/city/3/1": [
+  -33.8915,
+  151.2767
+ ],
+ "sydney/city/3/2": [
+  -33.9,
+  151.27
+ ],
+ "sydney/city/3/3": [
+  -33.8462,
+  151.281
+ ],
+ "sydney/destination/블루마운틴": [
+  -33.715,
+  150.311
+ ],
+ "sydney/nearby/1/1": [
+  -33.732,
+  150.312
+ ],
+ "sydney/nearby/1/2": [
+  -33.728,
+  150.3
+ ],
+ "sydney/nearby/1/3": [
+  -33.715,
+  150.33
+ ],
+ "sydney/destination/울런공": [
+  -34.4278,
+  150.8931
+ ],
+ "sydney/nearby/2/1": [
+  -34.47,
+  150.85
+ ],
+ "sydney/nearby/2/2": [
+  -34.247,
+  150.974
+ ],
+ "sydney/nearby/2/3": [
+  -34.226,
+  150.964
+ ],
+ "sydney/destination/센트럴 코스트": [
+  -33.425,
+  151.34
+ ],
+ "sydney/nearby/3/1": [
+  -33.36,
+  151.297
+ ],
+ "sydney/nearby/3/2": [
+  -33.449,
+  151.444
+ ],
+ "sydney/nearby/3/3": [
+  -33.52,
+  151.37
+ ],
+ "sydney/destination/로열 국립공원": [
+  -34.07,
+  151.05
+ ],
+ "sydney/nearby/4/1": [
+  -34.138,
+  151.128
+ ],
+ "sydney/nearby/4/2": [
+  -34.083,
+  151.15
+ ],
+ "sydney/nearby/4/3": [
+  -34.17,
+  151.06
+ ],
+ "auckland/city/1/1": [
+  -36.8485,
+  174.7622
+ ],
+ "auckland/city/1/2": [
+  -36.843,
+  174.758
+ ],
+ "auckland/city/1/3": [
+  -36.8602,
+  174.7778
+ ],
+ "auckland/city/2/1": [
+  -36.8999,
+  174.781
+ ],
+ "auckland/city/2/2": [
+  -36.8766,
+  174.765
+ ],
+ "auckland/city/2/3": [
+  -36.8613,
+  174.7783
+ ],
+ "auckland/city/3/1": [
+  -36.833,
+  174.7955
+ ],
+ "auckland/city/3/2": [
+  -36.827,
+  174.797
+ ],
+ "auckland/city/3/3": [
+  -36.827,
+  174.81
+ ],
+ "auckland/destination/와이헤케섬": [
+  -36.8,
+  175.1
+ ],
+ "auckland/nearby/1/1": [
+  -36.78,
+  175.05
+ ],
+ "auckland/nearby/1/2": [
+  -36.818,
+  175.106
+ ],
+ "auckland/nearby/1/3": [
+  -36.8,
+  175.08
+ ],
+ "auckland/destination/해밀턴": [
+  -37.787,
+  175.2793
+ ],
+ "auckland/nearby/2/1": [
+  -37.804,
+  175.305
+ ],
+ "auckland/nearby/2/2": [
+  -37.789,
+  175.282
+ ],
+ "auckland/nearby/2/3": [
+  -37.784,
+  175.28
+ ],
+ "auckland/destination/코로만델반도": [
+  -36.85,
+  175.65
+ ],
+ "auckland/nearby/3/1": [
+  -36.889,
+  175.818
+ ],
+ "auckland/nearby/3/2": [
+  -36.827,
+  175.79
+ ],
+ "auckland/nearby/3/3": [
+  -36.756,
+  175.498
+ ],
+ "auckland/destination/와이토모": [
+  -38.26,
+  175.1
+ ],
+ "auckland/nearby/4/1": [
+  -38.261,
+  175.104
+ ],
+ "auckland/nearby/4/2": [
+  -38.2655,
+  175.093
+ ],
+ "auckland/nearby/4/3": [
+  -38.268,
+  175.09
+ ]
+}

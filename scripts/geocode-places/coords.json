@@ -1,0 +1,1197 @@
+{
+ "tokyo/destination/가마쿠라": {
+  "lat": 35.32608056,
+  "lng": 139.55641667,
+  "label": "쓰루가오카하치만구",
+  "source": "wikidata:Q701403",
+  "away": 41.16991706411358
+ },
+ "tokyo/destination/닛코": {
+  "lat": 36.719833333333334,
+  "lng": 139.69816666666668,
+  "label": "닛코시",
+  "source": "wikidata:Q235753",
+  "away": 115.62651316120726
+ },
+ "tokyo/destination/하코네": {
+  "lat": 35.23236111111111,
+  "lng": 139.10694444444445,
+  "label": "하코네정",
+  "source": "wikidata:Q671040",
+  "away": 72.57023775831098
+ },
+ "tokyo/destination/요코하마": {
+  "lat": 35.474,
+  "lng": 139.59,
+  "label": "요코하마 국립 대학",
+  "source": "wikidata:Q1192619",
+  "away": 24.626879758190373
+ },
+ "tokyo/city/1/1/센소지와 아사쿠사": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/1/2/스미다강 크루즈": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/1/3/시부야 스크램블 교차로": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/2/1/메이지 신궁": {
+  "lat": 35.676111111111,
+  "lng": 139.69916666667,
+  "label": "메이지 신궁",
+  "source": "wikidata:Q287165",
+  "away": 0.9340940689001936
+ },
+ "tokyo/city/2/2/하라주쿠 다케시타 거리": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/2/3/도쿄 도청 전망대": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/3/1/츠키지 장외시장": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/3/2/팀랩 플래닛": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/city/3/3/아키하바라 게임 거리": {
+  "lat": 35.6645277,
+  "lng": 139.7377405,
+  "label": "테레비 도쿄, 1, 롯본기3초메, 롯본기, 미나토구, 도쿄도, 106-8107, 일본",
+  "source": "osm:node/4484700808",
+  "away": 4.642962906762599
+ },
+ "tokyo/nearby/1/1/가마쿠라 대불": {
+  "lat": 35.3191834,
+  "lng": 139.5504957,
+  "label": "가마쿠라, 303, 小町一丁目, 가마쿠라시, 가나가와현, 248-0006, 일본",
+  "source": "osm:node/263267829",
+  "away": 0.936345327430972
+ },
+ "tokyo/nearby/1/2/에노덴 열차": {
+  "lat": 35.3191834,
+  "lng": 139.5504957,
+  "label": "가마쿠라, 303, 小町一丁目, 가마쿠라시, 가나가와현, 248-0006, 일본",
+  "source": "osm:node/263267829",
+  "away": 0.936345327430972
+ },
+ "tokyo/nearby/1/3/쓰루가오카 하치만구": {
+  "lat": 35.32608056,
+  "lng": 139.55641667,
+  "label": "쓰루가오카하치만구",
+  "source": "wikidata:Q701403",
+  "away": 0
+ },
+ "tokyo/nearby/2/1/닛코 도쇼구": null,
+ "tokyo/nearby/2/2/게곤 폭포": {
+  "lat": 36.73788888888889,
+  "lng": 139.502,
+  "label": "게곤 폭포",
+  "source": "wikidata:Q37580",
+  "away": 17.597254733604732
+ },
+ "tokyo/nearby/2/3/주젠지 호수 산책": null,
+ "tokyo/nearby/3/1/하코네 로프웨이": {
+  "lat": 35.2442838,
+  "lng": 139.0520834,
+  "label": "彫刻の森美術館, 関本小涌谷線, 木賀, 하코네마치, 아시가라시모군, 가나가와현, 250-0398, 일본",
+  "source": "osm:node/5182750902",
+  "away": 5.155813537504883
+ },
+ "tokyo/nearby/3/2/아시노 호수 유람선": {
+  "lat": 35.2442838,
+  "lng": 139.0520834,
+  "label": "彫刻の森美術館, 関本小涌谷線, 木賀, 하코네마치, 아시가라시모군, 가나가와현, 250-0398, 일본",
+  "source": "osm:node/5182750902",
+  "away": 5.155813537504883
+ },
+ "tokyo/nearby/3/3/온천 료칸 당일 입욕": {
+  "lat": 35.2442838,
+  "lng": 139.0520834,
+  "label": "彫刻の森美術館, 関本小涌谷線, 木賀, 하코네마치, 아시가라시모군, 가나가와현, 250-0398, 일본",
+  "source": "osm:node/5182750902",
+  "away": 5.155813537504883
+ },
+ "tokyo/nearby/4/1/미나토미라이 지구": {
+  "lat": 35.4653773,
+  "lng": 139.6201667,
+  "label": "요코하마, はまりんロード, 南幸一丁目, 南幸, 西区, 요코하마시, 가나가와현, 231-0017, 일본",
+  "source": "osm:node/7750342743",
+  "away": 2.8952548111432326
+ },
+ "tokyo/nearby/4/2/요코하마 차이나타운": {
+  "lat": 35.4428,
+  "lng": 139.646,
+  "label": "요코하마 차이나타운",
+  "source": "wikidata:Q1141498",
+  "away": 6.14504957590665
+ },
+ "paris/destination/베르사유": {
+  "lat": 48.8,
+  "lng": 2.14,
+  "label": "베르사유 - 세인트 쿠엔틴 실내 이블린 대학교",
+  "source": "wikidata:Q186638",
+  "away": 16.757204426222515
+ },
+ "paris/destination/지베르니": {
+  "lat": 48.86,
+  "lng": 2.3263888888889,
+  "label": "지베르니의 화가의 정원",
+  "source": "wikidata:Q3794124",
+  "away": 1.7272772619630596
+ },
+ "paris/destination/퐁텐블로": {
+  "lat": 48.408888888889,
+  "lng": 2.7016666666667,
+  "label": "퐁텐블로",
+  "source": "wikidata:Q182872",
+  "away": 56.42644622376258
+ },
+ "paris/destination/샹티이": {
+  "lat": 49.186944444444,
+  "lng": 2.4608333333333,
+  "label": "샹티이",
+  "source": "wikidata:Q126675",
+  "away": 37.24197234721923
+ },
+ "paris/city/1/1/에펠탑": {
+  "lat": 48.858222,
+  "lng": 2.2945,
+  "label": "에펠탑에 있는 72명의 이름 목록",
+  "source": "wikidata:Q162873",
+  "away": 4.065000256469412
+ },
+ "paris/city/1/2/센강 유람선": {
+  "lat": 48.8534951,
+  "lng": 2.3483915,
+  "label": "파리, 일드프랑스, 프랑스 본토, 프랑스",
+  "source": "osm:relation/71525",
+  "away": 0.7328220533502312
+ },
+ "paris/city/1/3/트로카데로 광장": {
+  "lat": 48.8619948,
+  "lng": 2.2887325,
+  "label": "트로카데로 정원 (포토존), 자유와 인권의 광장, Chaillot, 파리 16구, 파리, 일드프랑스, 프랑스 본토, 75016, 프랑스",
+  "source": "osm:node/1697202142",
+  "away": 4.4874365946715855
+ },
+ "paris/city/2/1/루브르 박물관": {
+  "lat": 48.861111111111114,
+  "lng": 2.3358333333333334,
+  "label": "루브르 박물관",
+  "source": "wikidata:Q19675",
+  "away": 1.0436934278353112
+ },
+ "paris/city/2/2/튈르리 정원 산책": {
+  "lat": 48.8534951,
+  "lng": 2.3483915,
+  "label": "파리, 일드프랑스, 프랑스 본토, 프랑스",
+  "source": "osm:relation/71525",
+  "away": 0.7328220533502312
+ },
+ "paris/city/2/3/오르세 미술관": {
+  "lat": 48.859972,
+  "lng": 2.326527,
+  "label": "오르세 미술관",
+  "source": "wikidata:Q23402",
+  "away": 1.7171770089565281
+ },
+ "paris/city/3/1/몽마르트르 언덕": {
+  "lat": 48.886944444444,
+  "lng": 2.3411111111111,
+  "label": "몽마르트르",
+  "source": "wikidata:Q186115",
+  "away": 3.065803433348215
+ },
+ "paris/city/3/2/마레 지구 골목 탐방": {
+  "lat": 48.8534951,
+  "lng": 2.3483915,
+  "label": "파리, 일드프랑스, 프랑스 본토, 프랑스",
+  "source": "osm:relation/71525",
+  "away": 0.7328220533502312
+ },
+ "paris/city/3/3/생마르탱 운하": {
+  "lat": 48.847222222222,
+  "lng": 2.3666666666667,
+  "label": "생마르탱 운하",
+  "source": "wikidata:Q860172",
+  "away": 1.872352031591957
+ },
+ "paris/nearby/1/1/베르사유 궁전": {
+  "lat": 48.8035403,
+  "lng": 2.1266886,
+  "label": "베르사유, Versailles, 이블린, 일드프랑스, 프랑스 본토, 78000, 프랑스",
+  "source": "osm:relation/30295",
+  "away": 1.0514096527891472
+ },
+ "paris/nearby/1/2/베르사유 정원": {
+  "lat": 48.8035403,
+  "lng": 2.1266886,
+  "label": "베르사유, Versailles, 이블린, 일드프랑스, 프랑스 본토, 78000, 프랑스",
+  "source": "osm:relation/30295",
+  "away": 1.0514096527891472
+ },
+ "paris/nearby/1/3/왕비의 촌락": {
+  "lat": 48.8035403,
+  "lng": 2.1266886,
+  "label": "베르사유, Versailles, 이블린, 일드프랑스, 프랑스 본토, 78000, 프랑스",
+  "source": "osm:relation/30295",
+  "away": 1.0514096527891472
+ },
+ "paris/nearby/2/1/모네의 집과 정원": null,
+ "paris/nearby/2/2/수련 연못": null,
+ "paris/nearby/2/3/인상파 미술관": null,
+ "paris/nearby/3/1/퐁텐블로 궁전": {
+  "lat": 48.402222222222,
+  "lng": 2.7005555555556,
+  "label": "퐁텐블로궁",
+  "source": "wikidata:Q201428",
+  "away": 0.7458230976066343
+ },
+ "paris/nearby/3/2/퐁텐블로 숲 산책": {
+  "lat": 48.4049375,
+  "lng": 2.7015872,
+  "label": "퐁텐블로, 센에마른, 일드프랑스, 프랑스 본토, 77300, 프랑스",
+  "source": "osm:relation/216359",
+  "away": 0.4394135517721601
+ },
+ "paris/nearby/4/1/샹티이 성": {
+  "lat": 49.1931736,
+  "lng": 2.4636686,
+  "label": "샹티이, 상리스, Oise, Hauts-de-France, 프랑스 본토, 60500, 프랑스",
+  "source": "osm:relation/1415878",
+  "away": 0.7226469718537608
+ },
+ "paris/nearby/4/2/대마구간 승마 공연": {
+  "lat": 49.1931736,
+  "lng": 2.4636686,
+  "label": "샹티이, 상리스, Oise, Hauts-de-France, 프랑스 본토, 60500, 프랑스",
+  "source": "osm:relation/1415878",
+  "away": 0.7226469718537608
+ },
+ "paris/nearby/4/3/샹티이 크림 맛보기": {
+  "lat": 49.1931736,
+  "lng": 2.4636686,
+  "label": "샹티이, 상리스, Oise, Hauts-de-France, 프랑스 본토, 60500, 프랑스",
+  "source": "osm:relation/1415878",
+  "away": 0.7226469718537608
+ },
+ "new-york/destination/비콘": null,
+ "new-york/destination/슬리피 할로": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/destination/하이드 파크": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/destination/필라델피아": {
+  "lat": 39.952777777778,
+  "lng": -75.163611111111,
+  "label": "필라델피아",
+  "source": "wikidata:Q1345",
+  "away": 129.68267279815356
+ },
+ "new-york/city/1/1/자유의 여신상과 엘리스 섬": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/city/1/2/브루클린 브리지 걷기": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/city/1/3/덤보 포토 스폿": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/city/2/1/센트럴 파크": {
+  "lat": 40.766333333333336,
+  "lng": -73.98094444444445,
+  "label": "센트럴 파크 타워",
+  "source": "wikidata:Q2631701",
+  "away": 6.466452506525371
+ },
+ "new-york/city/2/2/메트로폴리탄 미술관": {
+  "lat": 40.779444444444444,
+  "lng": -73.96333333333334,
+  "label": "메트로폴리탄 미술관",
+  "source": "wikidata:Q160236",
+  "away": 8.316782909618215
+ },
+ "new-york/city/2/3/록펠러 센터 전망대": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/city/3/1/하이라인 산책": {
+  "lat": 40.7127281,
+  "lng": -74.0060152,
+  "label": "뉴욕, 미국",
+  "source": "osm:relation/175905",
+  "away": 0.5908212464662238
+ },
+ "new-york/city/3/2/첼시 마켓": {
+  "lat": 40.7425,
+  "lng": -74.0061,
+  "label": "첼시 마켓",
+  "source": "wikidata:Q5090112",
+  "away": 3.650209943024366
+ },
+ "new-york/city/3/3/브로드웨이 뮤지컬": {
+  "lat": 40.755833333333,
+  "lng": -73.986388888889,
+  "label": "브로드웨이 연극",
+  "source": "wikidata:Q235065",
+  "away": 5.223880359628567
+ },
+ "new-york/nearby/1/1/디아 비콘 미술관": null,
+ "new-york/nearby/1/2/비콘 메인 스트리트": null,
+ "new-york/nearby/1/3/마운트 비콘 전망": null,
+ "new-york/nearby/2/1/슬리피 할로 묘지": null,
+ "new-york/nearby/2/2/킹스 하이웨이 마을 산책": null,
+ "new-york/nearby/2/3/필립스버그 저택": null,
+ "new-york/nearby/3/1/루스벨트 저택": null,
+ "new-york/nearby/3/2/밴더빌트 저택": null,
+ "new-york/nearby/3/3/미국 요리 학교": null,
+ "new-york/nearby/4/1/독립기념관": {
+  "lat": 39.948888888889,
+  "lng": -75.15,
+  "label": "독립기념관",
+  "source": "wikidata:Q390028",
+  "away": 1.2381963356787336
+ },
+ "new-york/nearby/4/2/리버티 벨": {
+  "lat": 39.9527237,
+  "lng": -75.1635262,
+  "label": "필라델피아, Philadelphia County, 펜실베이니아, 미국",
+  "source": "osm:relation/188022",
+  "away": 0.00940974652720573
+ },
+ "new-york/nearby/4/3/리딩 터미널 마켓": {
+  "lat": 39.9527237,
+  "lng": -75.1635262,
+  "label": "필라델피아, Philadelphia County, 펜실베이니아, 미국",
+  "source": "osm:relation/188022",
+  "away": 0.00940974652720573
+ },
+ "bangkok/destination/아유타야": {
+  "lat": 14.349444444444,
+  "lng": 100.55944444444,
+  "label": "아유타야주",
+  "source": "wikidata:Q476222",
+  "away": 65.85612464013056
+ },
+ "bangkok/destination/담넌 사두악 수상시장": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/destination/칸차나부리": {
+  "lat": 14.6895,
+  "lng": 99.024,
+  "label": "깐짜나부리주",
+  "source": "wikidata:Q275740",
+  "away": 189.7149868153469
+ },
+ "bangkok/destination/파타야": {
+  "lat": 12.949565,
+  "lng": 100.893004,
+  "label": "파타야",
+  "source": "wikidata:Q170919",
+  "away": 99.64293026846714
+ },
+ "bangkok/city/1/1/왕궁과 에메랄드 사원": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/city/1/2/왓 포": {
+  "lat": 13.746388888889,
+  "lng": 100.49361111111,
+  "label": "왓 포",
+  "source": "wikidata:Q1059910",
+  "away": 1.6633705735157325
+ },
+ "bangkok/city/1/3/차오프라야강 수상 버스": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/city/2/1/왓 아룬": {
+  "lat": 13.743688888888888,
+  "lng": 100.48891944444445,
+  "label": "왓 아룬",
+  "source": "wikidata:Q724970",
+  "away": 2.1729801752005513
+ },
+ "bangkok/city/2/2/차이나타운 야시장": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/city/2/3/짐 톰슨의 집": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/city/3/1/짜뚜짝 주말시장": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/city/3/2/룸피니 공원": {
+  "lat": 13.73111111,
+  "lng": 100.54166667,
+  "label": "룸피니 공원",
+  "source": "wikidata:Q977437",
+  "away": 5.529262730651322
+ },
+ "bangkok/city/3/3/태국 전통 마사지": {
+  "lat": 13.7524938,
+  "lng": 100.4935089,
+  "label": "방콕, 태국",
+  "source": "osm:relation/92277",
+  "away": 1.0900218757996627
+ },
+ "bangkok/nearby/1/1/왓 마하탓": {
+  "lat": 14.356944444444,
+  "lng": 100.5675,
+  "label": "왓 마하탓",
+  "source": "wikidata:Q660585",
+  "away": 1.2035489614148132
+ },
+ "bangkok/nearby/1/2/왓 차이왓타나람": {
+  "lat": 14.343055555556,
+  "lng": 100.54194444444,
+  "label": "왓 차이왓타나람",
+  "source": "wikidata:Q2063779",
+  "away": 2.0146407510145345
+ },
+ "bangkok/nearby/1/3/유적지 자전거 투어": {
+  "lat": 14.3189468,
+  "lng": 100.5111681,
+  "label": "아유타야주, 태국",
+  "source": "osm:relation/1908806",
+  "away": 6.20887850918342
+ },
+ "bangkok/nearby/2/1/수상시장 보트 투어": null,
+ "bangkok/nearby/2/2/코코넛 설탕 공장": null,
+ "bangkok/nearby/2/3/매끌렁 기차 시장": null,
+ "bangkok/nearby/3/1/콰이강의 다리": null,
+ "bangkok/nearby/3/2/죽음의 철도 기차 타기": null,
+ "bangkok/nearby/3/3/에라완 폭포": null,
+ "bangkok/nearby/4/1/산호섬 라안": null,
+ "bangkok/nearby/4/2/진리의 성전": null,
+ "lisbon/destination/신트라": {
+  "lat": 38.797361111111,
+  "lng": -9.3904166666667,
+  "label": "신트라",
+  "source": "wikidata:Q190187",
+  "away": 23.35516517944846
+ },
+ "lisbon/destination/카스카이스": {
+  "lat": 38.696944444444,
+  "lng": -9.4205555555556,
+  "label": "카스카이스",
+  "source": "wikidata:Q273059",
+  "away": 24.478307878557303
+ },
+ "lisbon/destination/오비두스": {
+  "lat": 39.361952,
+  "lng": -9.157131,
+  "label": "오비두스",
+  "source": "wikidata:Q275862",
+  "away": 71.39713616171706
+ },
+ "lisbon/destination/세투발": {
+  "lat": 38.524305555556,
+  "lng": -8.8926111111111,
+  "label": "세투발현",
+  "source": "wikidata:Q274109",
+  "away": 30.584318777626546
+ },
+ "lisbon/city/1/1/28번 트램": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/1/2/알파마 지구": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/1/3/상조르제 성": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/2/1/벨렝 탑": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/2/2/제로니무스 수도원": {
+  "lat": 38.697846,
+  "lng": -9.205601,
+  "label": "제로니무스 수도원",
+  "source": "wikidata:Q272781",
+  "away": 6.202324807421712
+ },
+ "lisbon/city/2/3/파스테이스 드 벨렝": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/3/1/LX 팩토리": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/3/2/아줄레주 박물관": {
+  "lat": 38.7077507,
+  "lng": -9.1365919,
+  "label": "리스본, Lisboa, 포르투갈",
+  "source": "osm:relation/5400890",
+  "away": 1.3937877578487374
+ },
+ "lisbon/city/3/3/타임아웃 마켓": {
+  "lat": 38.706994,
+  "lng": -9.1456931,
+  "label": "타임아웃 마켓, 49, Avenida 24 de Julho, São Paulo, Misericórdia, 리스본, Lisboa, 1200-479, 포르투갈",
+  "source": "osm:way/39729235",
+  "away": 1.5282303236188868
+ },
+ "lisbon/nearby/1/1/페나 궁전": null,
+ "lisbon/nearby/1/2/무어인의 성": null,
+ "lisbon/nearby/1/3/헤갈레이라 별궁 정원": null,
+ "lisbon/nearby/2/1/카스카이스 구시가지": null,
+ "lisbon/nearby/2/2/호카 곶": null,
+ "lisbon/nearby/2/3/지옥의 입 절벽": null,
+ "lisbon/nearby/3/1/오비두스 성벽 걷기": null,
+ "lisbon/nearby/3/2/진지냐 초콜릿 잔": null,
+ "lisbon/nearby/3/3/서점 마을 산책": null,
+ "lisbon/nearby/4/1/트로이아 반도 해변": {
+  "lat": 38.5306294,
+  "lng": -8.8851333,
+  "label": "Estação Ferroviária de Setúbal, Avenida dos Ciprestes, Bairro Salgado, Setúbal (São Julião, Nossa Senhora da Anunciada e Santa Maria da Graça), Setúbal, 2900-319, 포르투갈",
+  "source": "osm:way/553366918",
+  "away": 0.9579111113015163
+ },
+ "lisbon/nearby/4/2/아라비다 자연공원": {
+  "lat": 38.5306294,
+  "lng": -8.8851333,
+  "label": "Estação Ferroviária de Setúbal, Avenida dos Ciprestes, Bairro Salgado, Setúbal (São Julião, Nossa Senhora da Anunciada e Santa Maria da Graça), Setúbal, 2900-319, 포르투갈",
+  "source": "osm:way/553366918",
+  "away": 0.9579111113015163
+ },
+ "lisbon/nearby/4/3/해산물 시장 식사": {
+  "lat": 38.5306294,
+  "lng": -8.8851333,
+  "label": "Estação Ferroviária de Setúbal, Avenida dos Ciprestes, Bairro Salgado, Setúbal (São Julião, Nossa Senhora da Anunciada e Santa Maria da Graça), Setúbal, 2900-319, 포르투갈",
+  "source": "osm:way/553366918",
+  "away": 0.9579111113015163
+ },
+ "istanbul/destination/프린스 제도": {
+  "lat": 41.006381,
+  "lng": 28.9758715,
+  "label": "이스탄불, Fatih, 이스탄불, Marmara Bölgesi, 34122, 튀르키예",
+  "source": "osm:node/1882099475",
+  "away": 0.5309842777648154
+ },
+ "istanbul/destination/부르사": {
+  "lat": 40.19133055555555,
+  "lng": 29.08053888888889,
+  "label": "부르사",
+  "source": "wikidata:Q40738",
+  "away": 91.42674169885842
+ },
+ "istanbul/destination/샤일레": null,
+ "istanbul/destination/이즈니크": {
+  "lat": 40.428888888889,
+  "lng": 29.719444444444,
+  "label": "이즈니크",
+  "source": "wikidata:Q217125",
+  "away": 89.76994975192207
+ },
+ "istanbul/city/1/1/아야 소피아": {
+  "lat": 41.00833333333333,
+  "lng": 28.98,
+  "label": "아야 소피아",
+  "source": "wikidata:Q12506",
+  "away": 0.18532487774076267
+ },
+ "istanbul/city/1/2/블루 모스크": {
+  "lat": 41.0053851,
+  "lng": 28.9768247,
+  "label": "술탄 아흐메트 모스크",
+  "source": "wikidata:Q80541",
+  "away": 0.5782011624281566
+ },
+ "istanbul/city/1/3/지하 저수지(바실리카 시스턴)": {
+  "lat": 41.006381,
+  "lng": 28.9758715,
+  "label": "이스탄불, Fatih, 이스탄불, Marmara Bölgesi, 34122, 튀르키예",
+  "source": "osm:node/1882099475",
+  "away": 0.5309842777648154
+ },
+ "istanbul/city/2/1/톱카프 궁전": {
+  "lat": 41.013,
+  "lng": 28.984,
+  "label": "톱카프 궁전",
+  "source": "wikidata:Q170495",
+  "away": 0.4732020861132107
+ },
+ "istanbul/city/2/2/그랜드 바자르": {
+  "lat": 41.010580555556,
+  "lng": 28.967933333333,
+  "label": "그랜드 바자르",
+  "source": "wikidata:Q505954",
+  "away": 1.0145309649948313
+ },
+ "istanbul/city/2/3/보스포루스 해협 크루즈": {
+  "lat": 41.006381,
+  "lng": 28.9758715,
+  "label": "이스탄불, Fatih, 이스탄불, Marmara Bölgesi, 34122, 튀르키예",
+  "source": "osm:node/1882099475",
+  "away": 0.5309842777648154
+ },
+ "istanbul/city/3/1/갈라타 탑": {
+  "lat": 41.0256406,
+  "lng": 28.9742134,
+  "label": "갈라타 탑, Büyük Hendek Caddesi, Kuledibi, Bereketzade Mahallesi, Beyoğlu, 이스탄불, Marmara Bölgesi, 34420, 튀르키예",
+  "source": "osm:way/23236783",
+  "away": 1.8056443950505994
+ },
+ "istanbul/city/3/2/카라쿄이 카페 골목": {
+  "lat": 41.006381,
+  "lng": 28.9758715,
+  "label": "이스탄불, Fatih, 이스탄불, Marmara Bölgesi, 34122, 튀르키예",
+  "source": "osm:node/1882099475",
+  "away": 0.5309842777648154
+ },
+ "istanbul/city/3/3/터키식 목욕탕(하맘)": {
+  "lat": 41.006381,
+  "lng": 28.9758715,
+  "label": "이스탄불, Fatih, 이스탄불, Marmara Bölgesi, 34122, 튀르키예",
+  "source": "osm:node/1882099475",
+  "away": 0.5309842777648154
+ },
+ "istanbul/nearby/1/1/뷔위카다 섬 마차 투어": null,
+ "istanbul/nearby/1/2/섬 해변 식당": null,
+ "istanbul/nearby/1/3/페리 갑판 유람": null,
+ "istanbul/nearby/2/1/울루 자미": {
+  "lat": 40.1825734,
+  "lng": 29.0675039,
+  "label": "부르사, Osmangazi, 부르사, Marmara Bölgesi, 16010, 튀르키예",
+  "source": "osm:node/289534897",
+  "away": 1.4745357425539454
+ },
+ "istanbul/nearby/2/2/부르사 케이블카": {
+  "lat": 40.1825734,
+  "lng": 29.0675039,
+  "label": "부르사, Osmangazi, 부르사, Marmara Bölgesi, 16010, 튀르키예",
+  "source": "osm:node/289534897",
+  "away": 1.4745357425539454
+ },
+ "istanbul/nearby/2/3/이스켄데르 케밥": {
+  "lat": 40.1825734,
+  "lng": 29.0675039,
+  "label": "부르사, Osmangazi, 부르사, Marmara Bölgesi, 16010, 튀르키예",
+  "source": "osm:node/289534897",
+  "away": 1.4745357425539454
+ },
+ "istanbul/nearby/3/1/샤일레 등대": null,
+ "istanbul/nearby/3/2/흑해 해변 산책": null,
+ "istanbul/nearby/3/3/샤일레 천 공예품": null,
+ "istanbul/nearby/4/1/이즈니크 호수": {
+  "lat": 40.4303445,
+  "lng": 29.7223732,
+  "label": "이즈니크, 부르사, Marmara Bölgesi, 16860, 튀르키예",
+  "source": "osm:relation/1273931",
+  "away": 0.296056993404075
+ },
+ "istanbul/nearby/4/2/이즈니크 고대 성벽": {
+  "lat": 40.4303445,
+  "lng": 29.7223732,
+  "label": "이즈니크, 부르사, Marmara Bölgesi, 16860, 튀르키예",
+  "source": "osm:relation/1273931",
+  "away": 0.296056993404075
+ },
+ "istanbul/nearby/4/3/이즈니크 타일 공방": {
+  "lat": 40.4303445,
+  "lng": 29.7223732,
+  "label": "이즈니크, 부르사, Marmara Bölgesi, 16860, 튀르키예",
+  "source": "osm:relation/1273931",
+  "away": 0.296056993404075
+ },
+ "marrakech/destination/우리카 계곡": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/destination/에사우이라": {
+  "lat": 31.513023,
+  "lng": -9.768696,
+  "label": "에사우이라",
+  "source": "wikidata:Q216939",
+  "away": 168.06259349048378
+ },
+ "marrakech/destination/아이트 벤하두": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/destination/아가파이 사막": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/city/1/1/제마 엘프나 광장": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/city/1/2/쿠투비아 모스크": {
+  "lat": 31.624124,
+  "lng": -7.993541,
+  "label": "쿠투비아 모스크",
+  "source": "wikidata:Q1137533",
+  "away": 0.8949232162503062
+ },
+ "marrakech/city/1/3/수크 흥정 산책": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/city/2/1/바히아 궁전": {
+  "lat": 31.6216327,
+  "lng": -7.9819376,
+  "label": "바히아 궁전, 5, Rue Riad Zitoun El Jedid, Souks الأسواق, Medina ⵎⴷⵉⵏⴰ المدينة, Arrondissement de Marrakech-Medina مقاطعة مراكش المدينة, 마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 40040, 모로코",
+  "source": "osm:relation/7117612",
+  "away": 1.946880207417278
+ },
+ "marrakech/city/2/2/마조렐 정원": {
+  "lat": 31.6414746,
+  "lng": -8.0029077,
+  "label": "마조렐 정원, Rue Yves Saint Laurent, Guéliz ⴳⵉⵍⵉⵣ گليز, Arrondissement de Gueliz مقاطعة كليز, 마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 40000, 모로코",
+  "source": "osm:way/41922120",
+  "away": 1.305274602620179
+ },
+ "marrakech/city/2/3/전통 하맘과 모로코 차": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/city/3/1/메나라 정원": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/city/3/2/마라케시 박물관": {
+  "lat": 31.6315655,
+  "lng": -7.9859692,
+  "label": "마라케시 박물관, Derb Alilich, Mouassine, Medina ⵎⴷⵉⵏⴰ المدينة, Arrondissement de Marrakech-Medina مقاطعة مراكش المدينة, 마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 40030, 모로코",
+  "source": "osm:relation/4627685",
+  "away": 1.339742741082427
+ },
+ "marrakech/city/3/3/타진 요리 교실": {
+  "lat": 31.6258257,
+  "lng": -7.9891608,
+  "label": "마라케시, Pachalik de Marrakech, Préfecture de Marrakech عمالة مراكش, Marrakech-Safi ⵎⵕⵕⴰⴽⵛ-ⴰⵙⴼⵉ مراكش-أسفي, 모로코",
+  "source": "osm:relation/2799538",
+  "away": 1.126334986460309
+ },
+ "marrakech/nearby/1/1/우리카 계곡 트레킹": null,
+ "marrakech/nearby/1/2/베르베르 마을 방문": null,
+ "marrakech/nearby/1/3/세티 파트마 폭포": null,
+ "marrakech/nearby/2/1/에사우이라 메디나": null,
+ "marrakech/nearby/2/2/항구 생선 시장": null,
+ "marrakech/nearby/2/3/스카라 성벽 전망": null,
+ "marrakech/nearby/3/1/아이트 벤하두 크사르": null,
+ "marrakech/nearby/3/2/티지 은 티슈카 고갯길": null,
+ "marrakech/nearby/3/3/와르자자트 영화 스튜디오": null,
+ "marrakech/nearby/4/1/낙타 트레킹": null,
+ "marrakech/nearby/4/2/사막 일몰": null,
+ "marrakech/nearby/4/3/베르베르식 저녁 식사": null,
+ "cusco/destination/성스러운 계곡": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/destination/마추픽추": null,
+ "cusco/destination/마라스와 모라이": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/destination/무지개산": null,
+ "cusco/city/1/1/아르마스 광장": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/1/2/코리칸차": {
+  "lat": -13.520111,
+  "lng": -71.975722,
+  "label": "코리칸차",
+  "source": "wikidata:Q817594",
+  "away": 1.2616719796274516
+ },
+ "cusco/city/1/3/산 블라스 골목": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/2/1/삭사이와만 유적": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/2/2/켄코와 푸카푸카라": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/2/3/코카 차 시음": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/3/1/잉카 박물관": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/3/2/열두 각 돌": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/city/3/3/산 페드로 시장": {
+  "lat": -13.5170887,
+  "lng": -71.9785356,
+  "label": "쿠스코, Distrito de Cusco, Cusco, 08001, 페루",
+  "source": "osm:node/59115290",
+  "away": 1.7066667822213433
+ },
+ "cusco/nearby/1/1/피삭 유적과 시장": null,
+ "cusco/nearby/1/2/오얀타이탐보 요새": null,
+ "cusco/nearby/1/3/친체로 직물 마을": null,
+ "cusco/nearby/2/1/마추픽추 기차 여행": {
+  "lat": -13.154869,
+  "lng": -72.5243578,
+  "label": "마추픽추 버스 티켓 판매소, Avenida Hermanos Ayar, Aguas Calientes, Machupicchu Pueblo, Machupicchu, Urubamba, Cusco, 08681, 페루",
+  "source": "osm:node/5930865186",
+  "away": 73.0567231592995
+ },
+ "cusco/nearby/2/2/마추픽추 유적 탐방": {
+  "lat": -13.154869,
+  "lng": -72.5243578,
+  "label": "마추픽추 버스 티켓 판매소, Avenida Hermanos Ayar, Aguas Calientes, Machupicchu Pueblo, Machupicchu, Urubamba, Cusco, 08681, 페루",
+  "source": "osm:node/5930865186",
+  "away": 73.0567231592995
+ },
+ "cusco/nearby/2/3/아구아스 칼리엔테스 마을": {
+  "lat": -13.154869,
+  "lng": -72.5243578,
+  "label": "마추픽추 버스 티켓 판매소, Avenida Hermanos Ayar, Aguas Calientes, Machupicchu Pueblo, Machupicchu, Urubamba, Cusco, 08681, 페루",
+  "source": "osm:node/5930865186",
+  "away": 73.0567231592995
+ },
+ "cusco/nearby/3/1/모라이 원형 계단밭": null,
+ "cusco/nearby/3/2/마라스 소금 계단밭": null,
+ "cusco/nearby/3/3/마라스 소금 시장": null,
+ "cusco/nearby/4/1/비니쿤카 트레킹": null,
+ "cusco/nearby/4/2/알파카 방목지": null,
+ "cusco/nearby/4/3/고원 마을 점심": null,
+ "hanoi/destination/하롱베이": {
+  "lat": 20.9,
+  "lng": 107.2,
+  "label": "하롱 만",
+  "source": "wikidata:Q190128",
+  "away": 140.91844819946576
+ },
+ "hanoi/destination/닌빈": {
+  "lat": 20.25,
+  "lng": 105.83333333333,
+  "label": "닌빈성",
+  "source": "wikidata:Q36900",
+  "away": 86.74938017127306
+ },
+ "hanoi/destination/바트짱": null,
+ "hanoi/destination/흐엉 사원": {
+  "lat": 20.618333333333332,
+  "lng": 105.7475,
+  "label": "흐엉 사원",
+  "source": "wikidata:Q7168306",
+  "away": 46.9984856399377
+ },
+ "hanoi/city/1/1/호안끼엠 호수": {
+  "lat": 21.028888888889,
+  "lng": 105.8525,
+  "label": "호안끼엠 호수",
+  "source": "wikidata:Q1151254",
+  "away": 0.28738554298867863
+ },
+ "hanoi/city/1/2/구시가지 36거리": {
+  "lat": 21.0283334,
+  "lng": 105.854041,
+  "label": "하노이, 베트남",
+  "source": "osm:relation/1903516",
+  "away": 0.4585289629616
+ },
+ "hanoi/city/1/3/수상 인형극": {
+  "lat": 21.0283334,
+  "lng": 105.854041,
+  "label": "하노이, 베트남",
+  "source": "osm:relation/1903516",
+  "away": 0.4585289629616
+ },
+ "hanoi/city/2/1/호찌민 묘소와 주석궁": {
+  "lat": 21.0283334,
+  "lng": 105.854041,
+  "label": "하노이, 베트남",
+  "source": "osm:relation/1903516",
+  "away": 0.4585289629616
+ },
+ "hanoi/city/2/2/문묘": {
+  "lat": 21.028611,
+  "lng": 105.835556,
+  "label": "문묘",
+  "source": "wikidata:Q1202019",
+  "away": 1.507063681910615
+ },
+ "hanoi/city/2/3/쌀국수와 분짜 맛보기": {
+  "lat": 21.0283334,
+  "lng": 105.854041,
+  "label": "하노이, 베트남",
+  "source": "osm:relation/1903516",
+  "away": 0.4585289629616
+ },
+ "hanoi/city/3/1/탕롱 황성": {
+  "lat": 21.036262,
+  "lng": 105.8402826,
+  "label": "탕롱 황성, Phố Đặng Dung, Yên Thành, Phường Ba Đình, 하노이, 11120, 베트남",
+  "source": "osm:relation/21425205",
+  "away": 1.2255517432767258
+ },
+ "hanoi/city/3/2/서호 일몰": {
+  "lat": 21.0283334,
+  "lng": 105.854041,
+  "label": "하노이, 베트남",
+  "source": "osm:relation/1903516",
+  "away": 0.4585289629616
+ },
+ "hanoi/city/3/3/기차 거리 커피": {
+  "lat": 21.0283334,
+  "lng": 105.854041,
+  "label": "하노이, 베트남",
+  "source": "osm:relation/1903516",
+  "away": 0.4585289629616
+ },
+ "hanoi/nearby/1/1/하롱베이 유람선": null,
+ "hanoi/nearby/1/2/티엔꿍 동굴": null,
+ "hanoi/nearby/1/3/카약 타기": null,
+ "hanoi/nearby/2/1/짱안 배 투어": null,
+ "hanoi/nearby/2/2/항무아 전망대": null,
+ "hanoi/nearby/2/3/호아르 옛 수도": null,
+ "hanoi/nearby/3/1/바트짱 도자기 마을": null,
+ "hanoi/nearby/3/2/도자기 만들기 체험": null,
+ "hanoi/nearby/3/3/홍강 제방 자전거": null,
+ "hanoi/nearby/4/1/흐엉 강 배 타기": null,
+ "hanoi/nearby/4/2/흐엉 사원 동굴": null,
+ "hanoi/nearby/4/3/산 위 케이블카": null,
+ "cape-town/destination/스텔렌보쉬": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/destination/프란슈훅": null,
+ "cape-town/destination/하마너스": null,
+ "cape-town/destination/웨스트 코스트 국립공원": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/1/1/테이블 마운틴": {
+  "lat": -33.96216,
+  "lng": 18.41352,
+  "label": "테이블산",
+  "source": "wikidata:Q213360",
+  "away": 4.725935810569203
+ },
+ "cape-town/city/1/2/빅토리아 앤 앨프리드 워터프런트": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/1/3/로벤 섬 투어": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/2/1/희망봉과 케이프 포인트": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/2/2/볼더스 비치 펭귄": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/2/3/채프먼스 피크 드라이브": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/3/1/컴스턴보쉬 식물원": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/3/2/시그널 힐 일몰": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/city/3/3/보카프 지구": {
+  "lat": -33.9288301,
+  "lng": 18.4172197,
+  "label": "케이프타운, City of Cape Town, 웨스턴케이프주, 8001, 남아프리카 공화국",
+  "source": "osm:node/32675806",
+  "away": 1.0148205892406603
+ },
+ "cape-town/nearby/1/1/스텔렌보쉬 와이너리": null,
+ "cape-town/nearby/1/2/도르프 스트리트 산책": null,
+ "cape-town/nearby/1/3/베르가르텐 정원": null,
+ "cape-town/nearby/2/1/프란슈훅 와인 트램": null,
+ "cape-town/nearby/2/2/위그노 기념관": null,
+ "cape-town/nearby/2/3/산악 도로 전망": null,
+ "cape-town/nearby/3/1/고래 관찰 보트": null,
+ "cape-town/nearby/3/2/클리프 패스 산책": null,
+ "cape-town/nearby/3/3/하마너스 구시가지": null,
+ "cape-town/nearby/4/1/랑가반 석호": null,
+ "cape-town/nearby/4/2/봄철 야생화 구경": null,
+ "cape-town/nearby/4/3/야생동물 탐방": null
+}

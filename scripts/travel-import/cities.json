@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "seoul",
+    "name": "서울",
+    "country": "대한민국",
+    "lat": 37.57,
+    "lng": 126.98,
+    "climate": "온대 몬순",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "수원",
+        "lat": 37.26,
+        "lng": 127.03
+      },
+      {
+        "name": "강화도",
+        "lat": 37.75,
+        "lng": 126.49
+      },
+      {
+        "name": "남한산성",
+        "lat": 37.48,
+        "lng": 127.18
+      },
+      {
+        "name": "가평",
+        "lat": 37.83,
+        "lng": 127.51
+      }
+    ]
+  },
+  {
+    "id": "kyoto",
+    "name": "교토",
+    "country": "일본",
+    "lat": 35.01,
+    "lng": 135.77,
+    "climate": "온대 습윤",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "나라",
+        "lat": 34.69,
+        "lng": 135.8
+      },
+      {
+        "name": "우지",
+        "lat": 34.89,
+        "lng": 135.8
+      },
+      {
+        "name": "히메지",
+        "lat": 34.84,
+        "lng": 134.69
+      },
+      {
+        "name": "히코네",
+        "lat": 35.27,
+        "lng": 136.25
+      }
+    ]
+  },
+  {
+    "id": "osaka",
+    "name": "오사카",
+    "country": "일본",
+    "lat": 34.69,
+    "lng": 135.5,
+    "climate": "온대 습윤",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 2,
+      "max": 3
+    },
+    "nearby": [
+      {
+        "name": "나라",
+        "lat": 34.69,
+        "lng": 135.8
+      },
+      {
+        "name": "고베",
+        "lat": 34.69,
+        "lng": 135.2
+      },
+      {
+        "name": "히메지",
+        "lat": 34.84,
+        "lng": 134.69
+      },
+      {
+        "name": "고야산",
+        "lat": 34.21,
+        "lng": 135.58
+      }
+    ]
+  },
+  {
+    "id": "taipei",
+    "name": "타이베이",
+    "country": "대만",
+    "lat": 25.03,
+    "lng": 121.56,
+    "climate": "아열대 습윤",
+    "bestSeason": "10월~12월 선선한 시기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "지우펀",
+        "lat": 25.11,
+        "lng": 121.84
+      },
+      {
+        "name": "단수이",
+        "lat": 25.17,
+        "lng": 121.44
+      },
+      {
+        "name": "예류",
+        "lat": 25.21,
+        "lng": 121.69
+      },
+      {
+        "name": "핑시",
+        "lat": 25.03,
+        "lng": 121.74
+      }
+    ]
+  },
+  {
+    "id": "hong-kong",
+    "name": "홍콩",
+    "country": "중국",
+    "lat": 22.28,
+    "lng": 114.16,
+    "climate": "아열대 습윤",
+    "bestSeason": "10월~12월 건조하고 선선한 시기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "마카오",
+        "lat": 22.2,
+        "lng": 113.55
+      },
+      {
+        "name": "선전",
+        "lat": 22.54,
+        "lng": 114.06
+      },
+      {
+        "name": "광저우",
+        "lat": 23.13,
+        "lng": 113.26
+      },
+      {
+        "name": "주하이",
+        "lat": 22.27,
+        "lng": 113.58
+      }
+    ]
+  },
+  {
+    "id": "singapore",
+    "name": "싱가포르",
+    "country": "싱가포르",
+    "lat": 1.29,
+    "lng": 103.85,
+    "climate": "열대 우림",
+    "bestSeason": "2월~4월 비교적 건조한 시기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "조호르바루",
+        "lat": 1.49,
+        "lng": 103.74
+      },
+      {
+        "name": "바탐",
+        "lat": 1.13,
+        "lng": 104.05
+      },
+      {
+        "name": "빈탄섬",
+        "lat": 1.12,
+        "lng": 104.48
+      },
+      {
+        "name": "우빈섬",
+        "lat": 1.4,
+        "lng": 103.96
+      }
+    ]
+  },
+  {
+    "id": "kuala-lumpur",
+    "name": "쿠알라룸푸르",
+    "country": "말레이시아",
+    "lat": 3.14,
+    "lng": 101.69,
+    "climate": "열대 우림",
+    "bestSeason": "5~9월 비교적 건기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "말라카",
+        "lat": 2.2,
+        "lng": 102.25
+      },
+      {
+        "name": "푸트라자야",
+        "lat": 2.93,
+        "lng": 101.69
+      },
+      {
+        "name": "겐팅 하일랜드",
+        "lat": 3.42,
+        "lng": 101.79
+      },
+      {
+        "name": "샤알람",
+        "lat": 3.07,
+        "lng": 101.52
+      }
+    ]
+  },
+  {
+    "id": "ho-chi-minh-city",
+    "name": "호찌민",
+    "country": "베트남",
+    "lat": 10.78,
+    "lng": 106.7,
+    "climate": "열대 사바나",
+    "bestSeason": "12월~4월 건기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "붕따우",
+        "lat": 10.35,
+        "lng": 107.08
+      },
+      {
+        "name": "미토",
+        "lat": 10.36,
+        "lng": 106.36
+      },
+      {
+        "name": "꾸찌",
+        "lat": 11.14,
+        "lng": 106.46
+      },
+      {
+        "name": "떠이닌",
+        "lat": 11.31,
+        "lng": 106.1
+      }
+    ]
+  },
+  {
+    "id": "siem-reap",
+    "name": "씨엠립",
+    "country": "캄보디아",
+    "lat": 13.36,
+    "lng": 103.86,
+    "climate": "열대 사바나",
+    "bestSeason": "11월~3월 건기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "톤레삽 호수",
+        "lat": 13.28,
+        "lng": 103.84
+      },
+      {
+        "name": "반테아이 스레이",
+        "lat": 13.6,
+        "lng": 103.96
+      },
+      {
+        "name": "벵 멜리아",
+        "lat": 13.47,
+        "lng": 104.25
+      },
+      {
+        "name": "쿨렌산",
+        "lat": 13.57,
+        "lng": 104.19
+      }
+    ]
+  },
+  {
+    "id": "beijing",
+    "name": "베이징",
+    "country": "중국",
+    "lat": 39.9,
+    "lng": 116.4,
+    "climate": "대륙성 몬순",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "바다링",
+        "lat": 40.36,
+        "lng": 116.02
+      },
+      {
+        "name": "명십삼릉",
+        "lat": 40.25,
+        "lng": 116.23
+      },
+      {
+        "name": "톈진",
+        "lat": 39.13,
+        "lng": 117.2
+      },
+      {
+        "name": "저우커우뎬",
+        "lat": 39.69,
+        "lng": 115.93
+      }
+    ]
+  },
+  {
+    "id": "shanghai",
+    "name": "상하이",
+    "country": "중국",
+    "lat": 31.23,
+    "lng": 121.47,
+    "climate": "온대 습윤",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "쑤저우",
+        "lat": 31.3,
+        "lng": 120.59
+      },
+      {
+        "name": "항저우",
+        "lat": 30.27,
+        "lng": 120.16
+      },
+      {
+        "name": "난징",
+        "lat": 32.06,
+        "lng": 118.8
+      },
+      {
+        "name": "저우좡",
+        "lat": 31.12,
+        "lng": 120.85
+      }
+    ]
+  },
+  {
+    "id": "jaipur",
+    "name": "자이푸르",
+    "country": "인도",
+    "lat": 26.91,
+    "lng": 75.79,
+    "climate": "반건조 열대",
+    "bestSeason": "10월~3월 선선한 시기가 좋음",
+    "recommendedDays": {
+      "min": 2,
+      "max": 3
+    },
+    "nearby": [
+      {
+        "name": "암베르",
+        "lat": 26.99,
+        "lng": 75.85
+      },
+      {
+        "name": "아바네리",
+        "lat": 27.01,
+        "lng": 76.61
+      },
+      {
+        "name": "란탐보르 국립공원",
+        "lat": 26.02,
+        "lng": 76.5
+      },
+      {
+        "name": "푸시카르",
+        "lat": 26.49,
+        "lng": 74.55
+      }
+    ]
+  },
+  {
+    "id": "kathmandu",
+    "name": "카트만두",
+    "country": "네팔",
+    "lat": 27.71,
+    "lng": 85.31,
+    "climate": "고산 기후(고도 약 1,400m)",
+    "bestSeason": "10월~11월, 3월~4월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "박타푸르",
+        "lat": 27.67,
+        "lng": 85.43
+      },
+      {
+        "name": "랄릿푸르",
+        "lat": 27.67,
+        "lng": 85.32
+      },
+      {
+        "name": "나가르코트",
+        "lat": 27.72,
+        "lng": 85.52
+      },
+      {
+        "name": "둘리켈",
+        "lat": 27.62,
+        "lng": 85.55
+      }
+    ]
+  },
+  {
+    "id": "dubai",
+    "name": "두바이",
+    "country": "아랍에미리트",
+    "lat": 25.2,
+    "lng": 55.27,
+    "climate": "사막 기후",
+    "bestSeason": "11월~3월 선선한 시기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "아부다비",
+        "lat": 24.47,
+        "lng": 54.37
+      },
+      {
+        "name": "샤르자",
+        "lat": 25.35,
+        "lng": 55.39
+      },
+      {
+        "name": "라스알카이마",
+        "lat": 25.79,
+        "lng": 55.94
+      },
+      {
+        "name": "푸자이라",
+        "lat": 25.12,
+        "lng": 56.33
+      }
+    ]
+  },
+  {
+    "id": "jerusalem",
+    "name": "예루살렘",
+    "country": "이스라엘",
+    "lat": 31.78,
+    "lng": 35.22,
+    "climate": "지중해성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "베들레헴",
+        "lat": 31.7,
+        "lng": 35.2
+      },
+      {
+        "name": "사해",
+        "lat": 31.5,
+        "lng": 35.5
+      },
+      {
+        "name": "마사다",
+        "lat": 31.32,
+        "lng": 35.35
+      },
+      {
+        "name": "예리코",
+        "lat": 31.86,
+        "lng": 35.46
+      }
+    ]
+  },
+  {
+    "id": "london",
+    "name": "런던",
+    "country": "영국",
+    "lat": 51.51,
+    "lng": -0.13,
+    "climate": "온대 해양성",
+    "bestSeason": "5~9월이 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "옥스퍼드",
+        "lat": 51.75,
+        "lng": -1.26
+      },
+      {
+        "name": "케임브리지",
+        "lat": 52.21,
+        "lng": 0.12
+      },
+      {
+        "name": "윈저",
+        "lat": 51.48,
+        "lng": -0.6
+      },
+      {
+        "name": "브라이턴",
+        "lat": 50.82,
+        "lng": -0.14
+      }
+    ]
+  },
+  {
+    "id": "rome",
+    "name": "로마",
+    "country": "이탈리아",
+    "lat": 41.9,
+    "lng": 12.5,
+    "climate": "지중해성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "티볼리",
+        "lat": 41.96,
+        "lng": 12.8
+      },
+      {
+        "name": "오스티아 안티카",
+        "lat": 41.76,
+        "lng": 12.29
+      },
+      {
+        "name": "오르비에토",
+        "lat": 42.72,
+        "lng": 12.11
+      },
+      {
+        "name": "나폴리",
+        "lat": 40.85,
+        "lng": 14.27
+      }
+    ]
+  },
+  {
+    "id": "barcelona",
+    "name": "바르셀로나",
+    "country": "스페인",
+    "lat": 41.39,
+    "lng": 2.17,
+    "climate": "지중해성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "몬세라트",
+        "lat": 41.6,
+        "lng": 1.84
+      },
+      {
+        "name": "지로나",
+        "lat": 41.98,
+        "lng": 2.82
+      },
+      {
+        "name": "시체스",
+        "lat": 41.24,
+        "lng": 1.81
+      },
+      {
+        "name": "타라고나",
+        "lat": 41.12,
+        "lng": 1.25
+      }
+    ]
+  },
+  {
+    "id": "madrid",
+    "name": "마드리드",
+    "country": "스페인",
+    "lat": 40.42,
+    "lng": -3.7,
+    "climate": "지중해성(대륙성 영향)",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "톨레도",
+        "lat": 39.86,
+        "lng": -4.02
+      },
+      {
+        "name": "세고비아",
+        "lat": 40.95,
+        "lng": -4.12
+      },
+      {
+        "name": "아빌라",
+        "lat": 40.66,
+        "lng": -4.7
+      },
+      {
+        "name": "쿠엥카",
+        "lat": 40.08,
+        "lng": -2.13
+      }
+    ]
+  },
+  {
+    "id": "amsterdam",
+    "name": "암스테르담",
+    "country": "네덜란드",
+    "lat": 52.37,
+    "lng": 4.9,
+    "climate": "온대 해양성",
+    "bestSeason": "4월~9월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "하를럼",
+        "lat": 52.38,
+        "lng": 4.64
+      },
+      {
+        "name": "위트레흐트",
+        "lat": 52.09,
+        "lng": 5.12
+      },
+      {
+        "name": "로테르담",
+        "lat": 51.92,
+        "lng": 4.48
+      },
+      {
+        "name": "델프트",
+        "lat": 52.01,
+        "lng": 4.36
+      }
+    ]
+  },
+  {
+    "id": "prague",
+    "name": "프라하",
+    "country": "체코",
+    "lat": 50.08,
+    "lng": 14.44,
+    "climate": "온대 대륙성",
+    "bestSeason": "5~9월, 12월 크리스마스 시즌이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "쿠트나호라",
+        "lat": 49.95,
+        "lng": 15.27
+      },
+      {
+        "name": "카를슈테인",
+        "lat": 49.94,
+        "lng": 14.19
+      },
+      {
+        "name": "테레진",
+        "lat": 50.51,
+        "lng": 14.15
+      },
+      {
+        "name": "플젠",
+        "lat": 49.75,
+        "lng": 13.38
+      }
+    ]
+  },
+  {
+    "id": "vienna",
+    "name": "빈",
+    "country": "오스트리아",
+    "lat": 48.21,
+    "lng": 16.37,
+    "climate": "온대 대륙성",
+    "bestSeason": "4~10월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "브라티슬라바",
+        "lat": 48.15,
+        "lng": 17.11
+      },
+      {
+        "name": "멜크",
+        "lat": 48.23,
+        "lng": 15.33
+      },
+      {
+        "name": "바덴 바이 빈",
+        "lat": 48.01,
+        "lng": 16.23
+      },
+      {
+        "name": "아이젠슈타트",
+        "lat": 47.85,
+        "lng": 16.52
+      }
+    ]
+  },
+  {
+    "id": "berlin",
+    "name": "베를린",
+    "country": "독일",
+    "lat": 52.52,
+    "lng": 13.4,
+    "climate": "온대 해양성(대륙성 영향)",
+    "bestSeason": "5~9월이 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "포츠담",
+        "lat": 52.4,
+        "lng": 13.06
+      },
+      {
+        "name": "오라니엔부르크",
+        "lat": 52.75,
+        "lng": 13.24
+      },
+      {
+        "name": "드레스덴",
+        "lat": 51.05,
+        "lng": 13.74
+      },
+      {
+        "name": "슈프레발트",
+        "lat": 51.87,
+        "lng": 14
+      }
+    ]
+  },
+  {
+    "id": "budapest",
+    "name": "부다페스트",
+    "country": "헝가리",
+    "lat": 47.5,
+    "lng": 19.04,
+    "climate": "온대 대륙성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "센텐드레",
+        "lat": 47.67,
+        "lng": 19.08
+      },
+      {
+        "name": "비셰그라드",
+        "lat": 47.79,
+        "lng": 18.97
+      },
+      {
+        "name": "에스테르곰",
+        "lat": 47.79,
+        "lng": 18.74
+      },
+      {
+        "name": "에게르",
+        "lat": 47.9,
+        "lng": 20.37
+      }
+    ]
+  },
+  {
+    "id": "athens",
+    "name": "아테네",
+    "country": "그리스",
+    "lat": 37.98,
+    "lng": 23.73,
+    "climate": "지중해성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "수니온 곶",
+        "lat": 37.65,
+        "lng": 24.02
+      },
+      {
+        "name": "아이기나",
+        "lat": 37.75,
+        "lng": 23.43
+      },
+      {
+        "name": "코린토스",
+        "lat": 37.91,
+        "lng": 22.88
+      },
+      {
+        "name": "나우플리오",
+        "lat": 37.57,
+        "lng": 22.8
+      }
+    ]
+  },
+  {
+    "id": "florence",
+    "name": "피렌체",
+    "country": "이탈리아",
+    "lat": 43.77,
+    "lng": 11.26,
+    "climate": "지중해성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "피사",
+        "lat": 43.72,
+        "lng": 10.4
+      },
+      {
+        "name": "시에나",
+        "lat": 43.32,
+        "lng": 11.33
+      },
+      {
+        "name": "산지미냐노",
+        "lat": 43.47,
+        "lng": 11.04
+      },
+      {
+        "name": "루카",
+        "lat": 43.84,
+        "lng": 10.5
+      }
+    ]
+  },
+  {
+    "id": "venice",
+    "name": "베네치아",
+    "country": "이탈리아",
+    "lat": 45.44,
+    "lng": 12.32,
+    "climate": "온대 습윤",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 2,
+      "max": 3
+    },
+    "nearby": [
+      {
+        "name": "부라노",
+        "lat": 45.49,
+        "lng": 12.42
+      },
+      {
+        "name": "파도바",
+        "lat": 45.41,
+        "lng": 11.88
+      },
+      {
+        "name": "베로나",
+        "lat": 45.44,
+        "lng": 10.99
+      },
+      {
+        "name": "비첸차",
+        "lat": 45.55,
+        "lng": 11.55
+      }
+    ]
+  },
+  {
+    "id": "edinburgh",
+    "name": "에든버러",
+    "country": "영국",
+    "lat": 55.95,
+    "lng": -3.19,
+    "climate": "온대 해양성",
+    "bestSeason": "5~9월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "스털링",
+        "lat": 56.12,
+        "lng": -3.94
+      },
+      {
+        "name": "글래스고",
+        "lat": 55.86,
+        "lng": -4.25
+      },
+      {
+        "name": "세인트앤드루스",
+        "lat": 56.34,
+        "lng": -2.8
+      },
+      {
+        "name": "던디",
+        "lat": 56.46,
+        "lng": -2.97
+      }
+    ]
+  },
+  {
+    "id": "reykjavik",
+    "name": "레이캬비크",
+    "country": "아이슬란드",
+    "lat": 64.15,
+    "lng": -21.94,
+    "climate": "아한대 해양성",
+    "bestSeason": "6~8월 백야, 9월~3월 오로라 시즌이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "싱벨리르 국립공원",
+        "lat": 64.26,
+        "lng": -21.13
+      },
+      {
+        "name": "게이시르",
+        "lat": 64.31,
+        "lng": -20.3
+      },
+      {
+        "name": "굴포스",
+        "lat": 64.33,
+        "lng": -20.12
+      },
+      {
+        "name": "블루 라군",
+        "lat": 63.88,
+        "lng": -22.45
+      }
+    ]
+  },
+  {
+    "id": "los-angeles",
+    "name": "로스앤젤레스",
+    "country": "미국",
+    "lat": 34.05,
+    "lng": -118.24,
+    "climate": "지중해성",
+    "bestSeason": "봄·가을이 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "샌타바버라",
+        "lat": 34.42,
+        "lng": -119.7
+      },
+      {
+        "name": "팜스프링스",
+        "lat": 33.83,
+        "lng": -116.55
+      },
+      {
+        "name": "카탈리나섬",
+        "lat": 33.34,
+        "lng": -118.33
+      },
+      {
+        "name": "애너하임",
+        "lat": 33.84,
+        "lng": -117.91
+      }
+    ]
+  },
+  {
+    "id": "san-francisco",
+    "name": "샌프란시스코",
+    "country": "미국",
+    "lat": 37.77,
+    "lng": -122.42,
+    "climate": "지중해성(서늘한 해양 영향)",
+    "bestSeason": "9월~10월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "소살리토",
+        "lat": 37.86,
+        "lng": -122.49
+      },
+      {
+        "name": "나파 밸리",
+        "lat": 38.5,
+        "lng": -122.27
+      },
+      {
+        "name": "몬터레이",
+        "lat": 36.6,
+        "lng": -121.89
+      },
+      {
+        "name": "샌타크루즈",
+        "lat": 36.97,
+        "lng": -122.03
+      }
+    ]
+  },
+  {
+    "id": "mexico-city",
+    "name": "멕시코시티",
+    "country": "멕시코",
+    "lat": 19.43,
+    "lng": -99.13,
+    "climate": "고산 아열대(고도 약 2,240m)",
+    "bestSeason": "11월~4월 건기가 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "테오티우아칸",
+        "lat": 19.69,
+        "lng": -98.84
+      },
+      {
+        "name": "푸에블라",
+        "lat": 19.04,
+        "lng": -98.2
+      },
+      {
+        "name": "쿠에르나바카",
+        "lat": 18.92,
+        "lng": -99.23
+      },
+      {
+        "name": "타스코",
+        "lat": 18.46,
+        "lng": -99.59
+      }
+    ]
+  },
+  {
+    "id": "rio-de-janeiro",
+    "name": "리우데자네이루",
+    "country": "브라질",
+    "lat": -22.91,
+    "lng": -43.17,
+    "climate": "열대 사바나",
+    "bestSeason": "5~10월 건기가 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "페트로폴리스",
+        "lat": -22.51,
+        "lng": -43.18
+      },
+      {
+        "name": "니테로이",
+        "lat": -22.88,
+        "lng": -43.1
+      },
+      {
+        "name": "앙그라두스헤이스",
+        "lat": -23.01,
+        "lng": -44.32
+      },
+      {
+        "name": "부지오스",
+        "lat": -22.75,
+        "lng": -41.88
+      }
+    ]
+  },
+  {
+    "id": "buenos-aires",
+    "name": "부에노스아이레스",
+    "country": "아르헨티나",
+    "lat": -34.6,
+    "lng": -58.38,
+    "climate": "온대 습윤",
+    "bestSeason": "봄(9~11월)·가을(3~5월)이 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "티그레",
+        "lat": -34.43,
+        "lng": -58.58
+      },
+      {
+        "name": "콜로니아 델 사크라멘토",
+        "lat": -34.47,
+        "lng": -57.84
+      },
+      {
+        "name": "라플라타",
+        "lat": -34.92,
+        "lng": -57.95
+      },
+      {
+        "name": "산안토니오 데 아레코",
+        "lat": -34.25,
+        "lng": -59.47
+      }
+    ]
+  },
+  {
+    "id": "vancouver",
+    "name": "밴쿠버",
+    "country": "캐나다",
+    "lat": 49.28,
+    "lng": -123.12,
+    "climate": "온대 해양성",
+    "bestSeason": "6~9월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "빅토리아",
+        "lat": 48.43,
+        "lng": -123.37
+      },
+      {
+        "name": "휘슬러",
+        "lat": 50.12,
+        "lng": -122.95
+      },
+      {
+        "name": "스쿼미시",
+        "lat": 49.7,
+        "lng": -123.15
+      },
+      {
+        "name": "리치먼드",
+        "lat": 49.17,
+        "lng": -123.14
+      }
+    ]
+  },
+  {
+    "id": "havana",
+    "name": "아바나",
+    "country": "쿠바",
+    "lat": 23.14,
+    "lng": -82.36,
+    "climate": "열대 사바나",
+    "bestSeason": "11월~4월 건기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "바라데로",
+        "lat": 23.03,
+        "lng": -81.29
+      },
+      {
+        "name": "비냘레스",
+        "lat": 22.62,
+        "lng": -83.71
+      },
+      {
+        "name": "마탄사스",
+        "lat": 23.05,
+        "lng": -81.58
+      },
+      {
+        "name": "코히마르",
+        "lat": 23.17,
+        "lng": -82.32
+      }
+    ]
+  },
+  {
+    "id": "cartagena",
+    "name": "카르타헤나",
+    "country": "콜롬비아",
+    "lat": 10.39,
+    "lng": -75.48,
+    "climate": "열대 사바나",
+    "bestSeason": "12월~4월 건기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "로사리오 제도",
+        "lat": 10.17,
+        "lng": -75.75
+      },
+      {
+        "name": "바루섬",
+        "lat": 10.2,
+        "lng": -75.6
+      },
+      {
+        "name": "바랑키야",
+        "lat": 10.96,
+        "lng": -74.8
+      },
+      {
+        "name": "산 바실리오 데 팔렌케",
+        "lat": 9.9,
+        "lng": -75.2
+      }
+    ]
+  },
+  {
+    "id": "cairo",
+    "name": "카이로",
+    "country": "이집트",
+    "lat": 30.04,
+    "lng": 31.24,
+    "climate": "사막 기후",
+    "bestSeason": "10월~4월 선선한 시기가 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "사카라",
+        "lat": 29.87,
+        "lng": 31.22
+      },
+      {
+        "name": "멤피스",
+        "lat": 29.85,
+        "lng": 31.25
+      },
+      {
+        "name": "알렉산드리아",
+        "lat": 31.2,
+        "lng": 29.92
+      },
+      {
+        "name": "파이윰",
+        "lat": 29.31,
+        "lng": 30.84
+      }
+    ]
+  },
+  {
+    "id": "sydney",
+    "name": "시드니",
+    "country": "오스트레일리아",
+    "lat": -33.87,
+    "lng": 151.21,
+    "climate": "온대 습윤",
+    "bestSeason": "9~11월, 3~5월이 좋음",
+    "recommendedDays": {
+      "min": 4,
+      "max": 5
+    },
+    "nearby": [
+      {
+        "name": "블루마운틴",
+        "lat": -33.72,
+        "lng": 150.31
+      },
+      {
+        "name": "울런공",
+        "lat": -34.43,
+        "lng": 150.89
+      },
+      {
+        "name": "헌터 밸리",
+        "lat": -32.78,
+        "lng": 151.35
+      },
+      {
+        "name": "로열 국립공원",
+        "lat": -34.07,
+        "lng": 151.05
+      }
+    ]
+  },
+  {
+    "id": "auckland",
+    "name": "오클랜드",
+    "country": "뉴질랜드",
+    "lat": -36.85,
+    "lng": 174.76,
+    "climate": "온대 해양성",
+    "bestSeason": "12월~3월이 좋음",
+    "recommendedDays": {
+      "min": 3,
+      "max": 4
+    },
+    "nearby": [
+      {
+        "name": "와이헤케섬",
+        "lat": -36.8,
+        "lng": 175.1
+      },
+      {
+        "name": "해밀턴",
+        "lat": -37.78,
+        "lng": 175.28
+      },
+      {
+        "name": "코로만델반도",
+        "lat": -36.76,
+        "lng": 175.5
+      },
+      {
+        "name": "로토루아",
+        "lat": -38.14,
+        "lng": 176.25
+      }
+    ]
+  }
+]

@@ -187,3 +187,34 @@ test("저장소 호출이 실패하면 실패 메시지를 보여주고 일정 �
   expect(await screen.findByText(/저장소에 연결하지 못했어요/)).toBeInTheDocument();
   expect(screen.getByText("에펠탑")).toBeInTheDocument();
 });
+
+test("4~7일도 저장되고 목록에 '도시명 N일'로 보이며 누르면 그 일수로 열린다", async () => {
+  session.current = { user: { email: "me@example.com" } };
+  const user = userEvent.setup();
+  render(<Home />);
+  await user.click(await screen.findByTestId("point-paris"));
+  await user.selectOptions(screen.getByRole("combobox", { name: "여행 일수" }), "7");
+  await user.click(await screen.findByRole("button", { name: "저장" }));
+
+  const list = await screen.findByRole("region", { name: "내 저장 일정" });
+  expect(await within(list).findByRole("button", { name: "파리 7일" })).toBeInTheDocument();
+  expect(db.rows).toEqual([expect.objectContaining({ city_id: "paris", days: 7 })]);
+
+  await user.selectOptions(screen.getByRole("combobox", { name: "여행 일수" }), "1");
+  await user.click(within(list).getByRole("button", { name: "파리 7일" }));
+  expect(screen.getByRole("combobox", { name: "여행 일수" })).toHaveValue("7");
+  expect(screen.getByText("7일차 · 근교: 샹티이")).toBeInTheDocument();
+});
+
+test("저장소가 일수를 거부해도 실패 메시지만 보이고 일정 열람은 그대로다", async () => {
+  session.current = { user: { email: "me@example.com" } };
+  const user = userEvent.setup();
+  render(<Home />);
+  await user.click(await screen.findByTestId("point-paris"));
+  await user.selectOptions(screen.getByRole("combobox", { name: "여행 일수" }), "5");
+  db.fail = true;
+  await user.click(await screen.findByRole("button", { name: "저장" }));
+
+  expect(await screen.findByText(/저장소에 연결하지 못했어요/)).toBeInTheDocument();
+  expect(screen.getByText("5일차 · 근교: 지베르니")).toBeInTheDocument();
+});

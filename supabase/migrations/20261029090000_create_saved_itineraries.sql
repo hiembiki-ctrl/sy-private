@@ -4,14 +4,14 @@
 create table if not exists public.saved_itineraries (
   id bigint generated always as identity primary key,
   user_id uuid not null default auth.uid() references auth.users (id) on delete cascade,
-  -- 지원 도시 10곳과 1~3일만 저장한다. 도시를 추가하면 이 목록도 함께 고친다.
+  -- 지원 도시 10곳과 1~7일만 저장한다. 도시를 추가하면 이 목록도 함께 고친다.
   city_id text not null check (
     city_id in (
       'tokyo', 'paris', 'new-york', 'bangkok', 'lisbon',
       'istanbul', 'marrakech', 'cusco', 'hanoi', 'cape-town'
     )
   ),
-  days smallint not null check (days between 1 and 3),
+  days smallint not null check (days between 1 and 7),
   created_at timestamptz not null default now(),
   -- 같은 사용자의 같은 도시·일수 조합은 한 번만 저장한다.
   -- user_id가 맨 앞이라 user_id 외래 키 조회와 사용자별 목록 조회의 인덱스도 겸한다.

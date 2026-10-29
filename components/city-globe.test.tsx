@@ -3,6 +3,7 @@ import { beforeEach, expect, test, vi } from "vitest";
 
 import CityGlobe from "@/components/city-globe";
 import { CITIES } from "@/lib/cities";
+import { INITIAL_CENTER, INITIAL_ZOOM } from "@/lib/map-config";
 
 type Handler = (event?: unknown) => void;
 
@@ -98,11 +99,11 @@ test("지도를 한 번만 만들고 선택이나 도시 목록이 바뀌어도 
   expect(maps).toHaveLength(1);
 });
 
-test("확대·축소 버튼을 달고, 출처 표기는 접지 않고 항상 펼쳐 둔다", () => {
+test("확대·축소 버튼과 처음 화면 버튼을 달고, 출처 표기는 접지 않고 항상 펼쳐 둔다", () => {
   render(<CityGlobe cities={CITIES} selectedId={null} onSelect={noop} />);
 
   const [map] = maps;
-  expect(map.controls).toHaveLength(1);
+  expect(map.controls).toHaveLength(2);
   expect(map.options.attributionControl).toEqual({ compact: false });
   // 너무 멀리 축소해 지구가 점처럼 작아지지 않게 한다.
   expect(map.options.minZoom).toBe(1);
@@ -254,4 +255,17 @@ test("이미 선택된 도시 점을 다시 누르면 지도가 그 도시로 �
 
   expect(map.flights.length).toBe(before + 1);
   expect(map.flights.at(-1)?.center).toEqual([2.35, 48.86]);
+});
+
+test("처음 화면 버튼을 누르면 처음 지구본 위치와 배율로 돌아간다", () => {
+  render(<CityGlobe cities={CITIES} selectedId="paris" onSelect={noop} />);
+  const [map] = maps;
+  const reset = map.controls[1] as { onAdd: () => HTMLElement };
+  const element = reset.onAdd();
+  const before = map.flights.length;
+
+  element.querySelector("button")!.click();
+
+  expect(element.querySelector("button")).toHaveAttribute("aria-label", "지구본 처음 화면으로");
+  expect(map.flights.slice(before)).toEqual([{ center: INITIAL_CENTER, zoom: INITIAL_ZOOM }]);
 });

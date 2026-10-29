@@ -3,7 +3,8 @@
 import "maplibre-gl/dist/maplibre-gl.css";
 
 import {
-  GeoJSONSource,
+  type GeoJSONSource,
+  type IControl,
   LngLatBounds,
   Map as MapLibreMap,
   NavigationControl,
@@ -39,6 +40,37 @@ type CityGlobeProps = {
 };
 
 const ROUTE_COLOR = "#2563eb";
+
+const RESET_LABEL = "지구본 처음 화면으로";
+const GLOBE_ICON =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin:auto;display:block"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>';
+
+// 확대·축소 버튼 아래에 붙는 버튼. 누르면 처음 지구본 화면으로 돌아간다.
+class ResetViewControl implements IControl {
+  private container?: HTMLDivElement;
+
+  constructor(private readonly onReset: () => void) {}
+
+  onAdd(): HTMLElement {
+    const container = document.createElement("div");
+    container.className = "maplibregl-ctrl maplibregl-ctrl-group";
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "maplibregl-ctrl-icon";
+    button.title = RESET_LABEL;
+    button.setAttribute("aria-label", RESET_LABEL);
+    button.innerHTML = GLOBE_ICON;
+    button.addEventListener("click", this.onReset);
+    container.append(button);
+    this.container = container;
+    return container;
+  }
+
+  onRemove(): void {
+    this.container?.remove();
+    this.container = undefined;
+  }
+}
 
 function routeData(points: RoutePoint[]) {
   return {
@@ -115,6 +147,10 @@ export default function CityGlobe({ cities, selectedId, onSelect, route = [] }: 
     });
     mapRef.current = map;
     map.addControl(new NavigationControl({ showCompass: false }), "top-right");
+    map.addControl(
+      new ResetViewControl(() => map.flyTo({ center: INITIAL_CENTER, zoom: INITIAL_ZOOM })),
+      "top-right",
+    );
 
     map.on("style.load", () => {
       styleReadyRef.current = true;

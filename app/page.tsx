@@ -1,7 +1,14 @@
 import { AuthControl } from "@/components/auth/auth-control";
 import { CityExplorer } from "@/components/city-explorer";
+import { loadCities } from "@/lib/catalog";
+import { rankByPopularity } from "@/lib/popularity";
 
-export default function Home() {
+// 여행지 DB의 변경이 몇 분 안에 화면에 반영되게 한다.
+export const revalidate = 300;
+
+export default async function Home() {
+  const { cities, popularIds } = await rankByPopularity(await loadCities());
+
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-6 px-4 py-8 sm:px-6">
       <header className="flex items-start justify-between gap-4">
@@ -15,7 +22,7 @@ export default function Home() {
         </div>
         <AuthControl />
       </header>
-      <CityExplorer />
+      <CityExplorer cities={cities} popularIds={popularIds} />
     </main>
   );
 }

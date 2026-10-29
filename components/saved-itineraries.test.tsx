@@ -53,6 +53,17 @@ const client = {
 
 vi.mock("@/lib/supabase/client", () => ({ createClient: () => client }));
 
+// 순위 조회는 외부 네트워크를 쓰므로 테스트에서는 원래 순서 그대로 돌려준다.
+vi.mock("@/lib/popularity", () => ({
+  rankByPopularity: async (cities: unknown[]) => ({ cities, popularIds: [] }),
+}));
+
+// 날씨 조회는 외부 네트워크를 쓰므로 테스트에서는 가짜 값을 돌려준다.
+vi.mock("@/lib/weather", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@/lib/weather")>()),
+  fetchCurrentWeather: async () => ({ temperature: 18, description: "맑음" }),
+}));
+
 vi.mock("@/components/city-globe", () => ({
   default: ({
     cities,
@@ -79,7 +90,7 @@ beforeEach(() => {
 
 test("로그아웃 상태에서는 '로그인하고 저장'이 보이고 저장 목록은 보이지 않는다", async () => {
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
 
   await user.click(await screen.findByTestId("point-paris"));
 
@@ -89,7 +100,7 @@ test("로그아웃 상태에서는 '로그인하고 저장'이 보이고 저장 
 
 test("'로그인하고 저장'을 누르면 로그인 입력이 열린다", async () => {
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
 
   await user.click(screen.getByRole("button", { name: "로그인하고 저장" }));
@@ -100,7 +111,7 @@ test("'로그인하고 저장'을 누르면 로그인 입력이 열린다", asyn
 test("로그인하면 저장할 수 있고 저장하면 '저장됨'과 목록 항목이 생긴다", async () => {
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
   await user.click(await screen.findByRole("button", { name: "저장" }));
 
@@ -113,7 +124,7 @@ test("로그인하면 저장할 수 있고 저장하면 '저장됨'과 목록 �
 test("같은 도시의 다른 일수는 따로 저장되고 같은 조합은 중복되지 않는다", async () => {
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
   await user.click(await screen.findByRole("button", { name: "저장" }));
   await screen.findByRole("button", { name: "저장됨" });
@@ -132,7 +143,7 @@ test("저장 목록 항목을 누르면 그 도시가 선택되고 저장한 일
   db.rows = [{ id: 1, city_id: "tokyo", days: 3, created_at: "2026-10-29T00:00:00Z" }];
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
 
   await user.click(await screen.findByRole("button", { name: "도쿄 3일" }));
 
@@ -148,7 +159,7 @@ test("'저장됨'을 다시 누르거나 삭제 버튼을 누르면 항목이 �
   ];
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByRole("button", { name: "도쿄 1일" }));
 
   await user.click(screen.getByRole("button", { name: "저장됨" }));
@@ -163,7 +174,7 @@ test("로그아웃하면 저장 목록이 사라지고 '로그인하고 저장'�
   db.rows = [{ id: 1, city_id: "tokyo", days: 1, created_at: "2026-10-29T00:00:00Z" }];
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
   await screen.findByRole("region", { name: "내 저장 일정" });
 
@@ -179,7 +190,7 @@ test("저장소 호출이 실패하면 실패 메시지를 보여주고 일정 �
   db.fail = true;
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
 
   await user.click(await screen.findByRole("button", { name: "저장" }));
@@ -191,7 +202,7 @@ test("저장소 호출이 실패하면 실패 메시지를 보여주고 일정 �
 test("4~7일도 저장되고 목록에 '도시명 N일'로 보이며 누르면 그 일수로 열린다", async () => {
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
   await user.selectOptions(screen.getByRole("combobox", { name: "여행 일수" }), "7");
   await user.click(await screen.findByRole("button", { name: "저장" }));
@@ -209,7 +220,7 @@ test("4~7일도 저장되고 목록에 '도시명 N일'로 보이며 누르면 �
 test("저장소가 일수를 거부해도 실패 메시지만 보이고 일정 열람은 그대로다", async () => {
   session.current = { user: { email: "me@example.com" } };
   const user = userEvent.setup();
-  render(<Home />);
+  render(await Home());
   await user.click(await screen.findByTestId("point-paris"));
   await user.selectOptions(screen.getByRole("combobox", { name: "여행 일수" }), "5");
   db.fail = true;

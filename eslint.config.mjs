@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // 데이터 수집용 Bun 스크립트라 앱의 린트 대상이 아니다.
+    "scripts/**",
     // Agent skills are vendored copies managed by skills-lock.json, and
     // .claude/worktrees holds duplicate checkouts of this app.
     ".claude/**",

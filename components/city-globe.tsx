@@ -2,7 +2,13 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 
-import { Map as MapLibreMap, NavigationControl, setWorkerUrl } from "maplibre-gl";
+import {
+  GeoJSONSource,
+  LngLatBounds,
+  Map as MapLibreMap,
+  NavigationControl,
+  setWorkerUrl,
+} from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -17,6 +23,7 @@ import {
   MAP_STYLE_URL,
   selectedCityFilter,
 } from "@/lib/map-config";
+import type { RoutePoint } from "@/lib/route";
 
 // 번들러가 워커 경로를 깨뜨리므로 워커 파일을 정적 자산으로 두고 주소를 직접 알려 준다.
 setWorkerUrl(
@@ -27,9 +34,53 @@ type CityGlobeProps = {
   cities: City[];
   selectedId: string | null;
   onSelect: (id: string) => void;
+  /** 지도에 번호 핀과 직선 동선으로 보여 줄 하루의 방문 장소. */
+  route?: RoutePoint[];
 };
 
-export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobeProps) {
+const ROUTE_COLOR = "#2563eb";
+
+function routeData(points: RoutePoint[]) {
+  return {
+    line: {
+      type: "FeatureCollection" as const,
+      features:
+        points.length < 2
+          ? []
+          : [
+              {
+                type: "Feature" as const,
+                properties: {},
+                geometry: {
+                  type: "LineString" as const,
+                  coordinates: points.map((p) => [p.lng, p.lat]),
+                },
+              },
+            ],
+    },
+    points: {
+      type: "FeatureCollection" as const,
+      features: points.map((p) => ({
+        type: "Feature" as const,
+        properties: { number: String(p.number), name: p.name },
+        geometry: { type: "Point" as const, coordinates: [p.lng, p.lat] },
+      })),
+    },
+  };
+}
+
+// 동선 소스를 새 장소로 바꾸고, 장소가 있으면 모두 화면에 담기게 지도를 맞춘다.
+function applyRoute(map: MapLibreMap, points: RoutePoint[]) {
+  const data = routeData(points);
+  (map.getSource("route-line") as GeoJSONSource | undefined)?.setData(data.line);
+  (map.getSource("route-points") as GeoJSONSource | undefined)?.setData(data.points);
+  if (points.length === 0) return;
+  const bounds = new LngLatBounds();
+  for (const p of points) bounds.extend([p.lng, p.lat]);
+  map.fitBounds(bounds, { padding: 56, maxZoom: 15, duration: 900 });
+}
+
+export default function CityGlobe({ cities, selectedId, onSelect, route = [] }: CityGlobeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const styleReadyRef = useRef(false);
@@ -39,7 +90,9 @@ export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobePro
   const citiesRef = useRef(cities);
   const selectedIdRef = useRef(selectedId);
   const onSelectRef = useRef(onSelect);
+  const routeRef = useRef(route);
   useEffect(() => {
+    routeRef.current = route;
     citiesRef.current = cities;
     selectedIdRef.current = selectedId;
     onSelectRef.current = onSelect;
@@ -95,10 +148,10 @@ export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobePro
         type: "circle",
         source: "cities",
         paint: {
-          "circle-radius": 6,
+          "circle-radius": 3.5,
           "circle-color": "#f97316",
           "circle-stroke-color": "#ffffff",
-          "circle-stroke-width": 2,
+          "circle-stroke-width": 1,
         },
       });
       map.addLayer({
@@ -107,10 +160,10 @@ export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobePro
         source: "cities",
         filter: selectedCityFilter(selectedIdRef.current),
         paint: {
-          "circle-radius": 10,
+          "circle-radius": 6,
           "circle-color": "#dc2626",
           "circle-stroke-color": "#ffffff",
-          "circle-stroke-width": 3,
+          "circle-stroke-width": 2,
         },
       });
       map.addLayer({
@@ -120,11 +173,12 @@ export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobePro
         layout: {
           "text-field": ["get", "name"],
           "text-font": ["Noto Sans Bold"],
-          "text-size": 14,
-          "text-offset": [0, 1.1],
+          "text-size": 11,
+          "text-offset": [0, 0.9],
           "text-anchor": "top",
-          "text-allow-overlap": true,
-          "text-ignore-placement": true,
+          // 도시가 많아 겹치는 이름은 숨긴다. 확대하면 모두 보인다.
+          "text-allow-overlap": false,
+          "text-optional": true,
         },
         paint: {
           "text-color": "#111827",
@@ -132,6 +186,42 @@ export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobePro
           "text-halo-width": 2,
         },
       });
+
+      // 일정의 하루 동선: 방문 순서대로 이은 선 위에 번호 핀을 얹는다.
+      const initial = routeData(routeRef.current);
+      map.addSource("route-line", { type: "geojson", data: initial.line });
+      map.addSource("route-points", { type: "geojson", data: initial.points });
+      map.addLayer({
+        id: "route-line",
+        type: "line",
+        source: "route-line",
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": ROUTE_COLOR, "line-width": 3, "line-opacity": 0.85 },
+      });
+      map.addLayer({
+        id: "route-points",
+        type: "circle",
+        source: "route-points",
+        paint: {
+          "circle-radius": 10,
+          "circle-color": ROUTE_COLOR,
+          "circle-stroke-color": "#ffffff",
+          "circle-stroke-width": 2,
+        },
+      });
+      map.addLayer({
+        id: "route-numbers",
+        type: "symbol",
+        source: "route-points",
+        layout: {
+          "text-field": ["get", "number"],
+          "text-font": ["Noto Sans Bold"],
+          "text-size": 12,
+          "text-allow-overlap": true,
+        },
+        paint: { "text-color": "#ffffff" },
+      });
+      if (routeRef.current.length > 0) applyRoute(map, routeRef.current);
 
       for (const layerId of ["city-points", "city-selected", "city-labels"]) {
         map.on("click", layerId, (event) => {
@@ -173,6 +263,14 @@ export default function CityGlobe({ cities, selectedId, onSelect }: CityGlobePro
     const city = cities.find((c) => c.id === selectedId);
     if (city) map.flyTo({ center: [city.lng, city.lat], zoom: CITY_FLY_ZOOM });
   }, [cities, selectedId]);
+
+  // 보여 줄 동선이 바뀌면 지도에 반영한다. 같은 장소 구성이면 다시 맞추지 않는다.
+  const routeKey = route.map((p) => `${p.number}:${p.lat},${p.lng}`).join("|");
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !styleReadyRef.current) return;
+    applyRoute(map, routeRef.current);
+  }, [routeKey]);
 
   return (
     <div className="relative size-full">

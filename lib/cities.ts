@@ -1,4 +1,5 @@
 import { NEARBY_TRIPS, RECOMMENDED_DAYS } from "@/lib/nearby-trips";
+import { orderForShortestRoute } from "@/lib/route";
 
 export type ItineraryKind = "명소" | "액티비티";
 
@@ -6,6 +7,11 @@ export type ItineraryItem = {
   name: string;
   summary: string;
   kind: ItineraryKind;
+  /** 설명을 가져온 문서. 위키백과 글은 출처를 밝혀야 해서 링크로 보인다. */
+  sourceUrl?: string;
+  /** 지도 동선에 쓰는 좌표. 없으면 그 장소는 지도에 그리지 않는다. */
+  lat?: number;
+  lng?: number;
 };
 
 export type Days = 1 | 2 | 3 | 4 | 5 | 6 | 7;
@@ -317,20 +323,20 @@ export const CITIES: City[] = BASE_CITIES.map((city) => ({
   recommendedDays: RECOMMENDED_DAYS[city.id],
 }));
 
-export function getCity(id: string): City | undefined {
-  return CITIES.find((city) => city.id === id);
+export function getCity(id: string, cities: City[] = CITIES): City | undefined {
+  return cities.find((city) => city.id === id);
 }
 
-export function getItinerary(cityId: string, days: Days): DayPlan[] {
-  const city = getCity(cityId);
+export function getItinerary(cityId: string, days: Days, cities: City[] = CITIES): DayPlan[] {
+  const city = getCity(cityId, cities);
   if (!city) return [];
   const plans: DayPlan[] = [];
   for (let day = 1; day <= days; day++) {
     if (day <= CITY_DAYS) {
-      plans.push({ day, items: city.days[day - 1] });
+      plans.push({ day, items: orderForShortestRoute(city.days[day - 1]) });
     } else {
       const trip = city.nearby[day - CITY_DAYS - 1];
-      plans.push({ day, destination: trip.destination, items: trip.items });
+      plans.push({ day, destination: trip.destination, items: orderForShortestRoute(trip.items) });
     }
   }
   return plans;

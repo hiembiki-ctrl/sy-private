@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 
-import type { Days } from "@/lib/cities";
+import type { Days, DayPlan } from "@/lib/cities";
 import {
   listSavedItineraries,
   removeSavedItinerary,
   saveItinerary,
+  updateSavedPlan,
   type SavedItinerary,
 } from "@/lib/saved-itineraries";
 import { createClient } from "@/lib/supabase/client";
@@ -41,21 +42,28 @@ export function useSavedItineraries(email: string | null) {
   }, [email]);
 
   const run = useCallback(
-    async (action: () => Promise<void>) => {
-      if (!email) return;
+    async (action: () => Promise<void>): Promise<boolean> => {
+      if (!email) return false;
       setError(null);
       try {
         await action();
         await refresh(email);
+        return true;
       } catch {
         setError(UNREACHABLE);
+        return false;
       }
     },
     [email, refresh],
   );
 
   const save = useCallback(
-    (cityId: string, days: Days) => run(() => saveItinerary(createClient(), cityId, days)),
+    (cityId: string, days: Days, plan?: DayPlan[]) =>
+      run(() => saveItinerary(createClient(), cityId, days, plan)),
+    [run],
+  );
+  const updatePlan = useCallback(
+    (id: number, plan: DayPlan[]) => run(() => updateSavedPlan(createClient(), id, plan)),
     [run],
   );
   const remove = useCallback(
@@ -64,5 +72,5 @@ export function useSavedItineraries(email: string | null) {
   );
 
   const saved = email && loaded?.email === email ? loaded.list : [];
-  return { saved, error: email ? error : null, save, remove };
+  return { saved, error: email ? error : null, save, updatePlan, remove };
 }

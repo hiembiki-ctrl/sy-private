@@ -4,7 +4,7 @@ import { beforeEach, expect, test, vi } from "vitest";
 
 import Home from "@/app/page";
 
-type Row = { id: number; city_id: string; days: number; created_at: string };
+type Row = { id: number; city_id: string; days: number; created_at: string; plan?: unknown };
 
 const db = { rows: [] as Row[], nextId: 1, fail: false };
 const session = { current: null as { user: { email: string } } | null };
@@ -33,7 +33,7 @@ const client = {
           ? { data: null, error: { message: "network" } }
           : { data: [...db.rows].sort((a, b) => b.id - a.id), error: null },
     }),
-    insert: async (v: { city_id: string; days: number }) => {
+    insert: async (v: { city_id: string; days: number; plan?: unknown }) => {
       if (db.fail) return { error: { message: "network" } };
       if (db.rows.some((r) => r.city_id === v.city_id && r.days === v.days)) {
         return { error: { code: "23505", message: "duplicate" } };
@@ -41,6 +41,13 @@ const client = {
       db.rows.push({ id: db.nextId++, ...v, created_at: "2026-10-29T00:00:00Z" });
       return { error: null };
     },
+    update: (v: { plan: unknown }) => ({
+      eq: async (_c: string, id: number) => {
+        if (db.fail) return { error: { message: "network" } };
+        db.rows = db.rows.map((r) => (r.id === id ? { ...r, plan: v.plan } : r));
+        return { error: null };
+      },
+    }),
     delete: () => ({
       eq: async (_c: string, id: number) => {
         if (db.fail) return { error: { message: "network" } };
@@ -228,4 +235,85 @@ test("저장소가 일수를 거부해도 실패 메시지만 보이고 일정 �
 
   expect(await screen.findByText(/저장소에 연결하지 못했어요/)).toBeInTheDocument();
   expect(screen.getByText("5일차 · 근교: 지베르니")).toBeInTheDocument();
+});
+
+test("로그인하지 않아도 장소를 빼고 추가할 수 있고, 새로 고치면 원래대로 돌아온다", async () => {
+  const user = userEvent.setup();
+  const first = render(await Home());
+  await user.click(await screen.findByTestId("point-paris"));
+
+  await user.click(screen.getByRole("button", { name: "에펠탑 일정에서 빼기" }));
+  expect(screen.queryByText("에펠탑")).not.toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: "1일차에 장소 추가" }));
+  await user.click(await screen.findByRole("button", { name: "루브르 박물관 추가" }));
+  expect(screen.getByText("루브르 박물관")).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: "1일차에 장소 추가" }));
+  await user.type(await screen.findByLabelText("직접 입력"), "동네 빵집");
+  await user.click(screen.getByRole("button", { name: "직접 입력한 장소 추가" }));
+  expect(screen.getByText("동네 빵집")).toBeInTheDocument();
+  expect(db.rows).toHaveLength(0);
+
+  first.unmount();
+  render(await Home());
+  await user.click(await screen.findByTestId("point-paris"));
+  expect(screen.getByText("에펠탑")).toBeInTheDocument();
+  expect(screen.queryByText("동네 빵집")).not.toBeInTheDocument();
+});
+
+test("고친 일정은 저장해야 남고, 저장한 일정은 고친 모습으로 다시 열린다", async () => {
+  session.current = { user: { email: "me@example.com" } };
+  const user = userEvent.setup();
+  render(await Home());
+  await user.click(await screen.findByTestId("point-paris"));
+
+  await user.click(screen.getByRole("button", { name: "에펠탑 일정에서 빼기" }));
+  expect(db.rows).toHaveLength(0);
+  await user.click(screen.getByRole("button", { name: "저장" }));
+
+  expect(await screen.findByRole("button", { name: "저장됨" })).toBeInTheDocument();
+  expect(db.rows).toHaveLength(1);
+  const plan = db.rows[0].plan as { items: { name: string }[] }[];
+  expect(plan[0].items.map((i) => i.name)).not.toContain("에펠탑");
+
+  await user.click(await screen.findByTestId("point-tokyo"));
+  await user.click(screen.getByRole("button", { name: "파리 1일" }));
+  expect(screen.queryByText("에펠탑")).not.toBeInTheDocument();
+});
+
+test("저장한 일정을 또 고치면 '변경 저장'으로 같은 항목을 갱신하고 되돌리면 저장된 모습이다", async () => {
+  session.current = { user: { email: "me@example.com" } };
+  const user = userEvent.setup();
+  render(await Home());
+  await user.click(await screen.findByTestId("point-paris"));
+  await user.click(screen.getByRole("button", { name: "저장" }));
+  await screen.findByRole("button", { name: "저장됨" });
+
+  await user.click(screen.getByRole("button", { name: "에펠탑 일정에서 빼기" }));
+  await user.click(screen.getByRole("button", { name: "되돌리기" }));
+  expect(screen.getByText("에펠탑")).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: "에펠탑 일정에서 빼기" }));
+  await user.click(screen.getByRole("button", { name: "변경 저장" }));
+
+  await waitFor(() => expect(db.rows[0].plan).toBeDefined());
+  expect(db.rows).toHaveLength(1);
+  expect(await screen.findByRole("button", { name: "저장됨" })).toBeInTheDocument();
+  expect(screen.queryByText("에펠탑")).not.toBeInTheDocument();
+});
+
+test("저장에 실패하면 화면에서 고친 내용을 그대로 둔다", async () => {
+  session.current = { user: { email: "me@example.com" } };
+  const user = userEvent.setup();
+  render(await Home());
+  await user.click(await screen.findByTestId("point-paris"));
+  await user.click(screen.getByRole("button", { name: "에펠탑 일정에서 빼기" }));
+
+  db.fail = true;
+  await user.click(screen.getByRole("button", { name: "저장" }));
+
+  expect(await screen.findByText(/저장소에 연결하지 못했어요/)).toBeInTheDocument();
+  expect(screen.queryByText("에펠탑")).not.toBeInTheDocument();
+  expect(screen.getByRole("button", { name: "되돌리기" })).toBeInTheDocument();
 });

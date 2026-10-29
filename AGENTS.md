@@ -44,3 +44,15 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - 자동 코드 리뷰는 최대 1회, 가장 낮은 강도(`code-review low`)로만 돌린다. 리뷰어를 못 부르면 그 사실만 적고 완료로 본다.
 - 지적 중 스펙의 수용 기준을 깨거나 주 경로가 실제로 깨지는 것만 고친다. 나머지는 `docs/follow-ups/`에 한 줄로 남긴다. 재리뷰는 하지 않는다.
 - 스펙이 요구하지 않은 보안 하드닝·엣지케이스·성능 방어는 범위 밖이다.
+
+<!-- BEGIN:supabase-live-docs -->
+# Supabase 최신 문서
+
+Supabase(DB, Auth, RLS, `@supabase/ssr`)를 다루는 작업을 시작할 때는 먼저 설치된 `supabase` 스킬을 읽고, 공식 문서 색인 https://supabase.com/llms.txt 와 https://supabase.com/changelog.md 를 그 시점에 가져와 확인한다. 가져온 내용은 저장소에 복사하지 않고, 설치된 패키지 버전과 대조해 적용한다.
+<!-- END:supabase-live-docs -->
+
+<!-- BEGIN:maplibre-live-docs -->
+# MapLibre 최신 문서
+
+MapLibre GL JS(지구본, 확대, 스타일, 타일 출처)를 다루는 작업을 시작할 때는 공식 문서 색인 https://maplibre.org/maplibre-gl-js/docs/llms.txt 를 그 시점에 가져와 확인한다. 가져온 내용은 저장소에 복사하지 않고, 설치된 `maplibre-gl` 버전과 대조해 적용한다. 타일 출처는 OpenFreeMap(https://openfreemap.org/)의 공개 인스턴스를 쓰며 사용 조건은 그 사이트를 기준으로 한다.
+<!-- END:maplibre-live-docs -->

@@ -118,7 +118,7 @@ test("같은 도시의 다른 일수는 따로 저장되고 같은 조합은 중
   await user.click(await screen.findByRole("button", { name: "저장" }));
   await screen.findByRole("button", { name: "저장됨" });
 
-  await user.click(screen.getByRole("tab", { name: "3일" }));
+  await user.selectOptions(screen.getByRole("combobox", { name: "여행 일수" }), "3");
   expect(await screen.findByRole("button", { name: "저장" })).toBeInTheDocument();
   await user.click(screen.getByRole("button", { name: "저장" }));
   await screen.findByRole("button", { name: "저장됨" });
@@ -137,7 +137,7 @@ test("저장 목록 항목을 누르면 그 도시가 선택되고 저장한 일
   await user.click(await screen.findByRole("button", { name: "도쿄 3일" }));
 
   expect(screen.getByRole("heading", { name: "도쿄" })).toBeInTheDocument();
-  expect(screen.getAllByText(/일차$/)).toHaveLength(3);
+  expect(screen.getAllByText(/^[0-9]일차/)).toHaveLength(3);
   expect(screen.getByRole("button", { name: "저장됨" })).toBeInTheDocument();
 });
 

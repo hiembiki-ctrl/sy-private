@@ -1,3 +1,5 @@
+import { NEARBY_TRIPS, RECOMMENDED_DAYS } from "@/lib/nearby-trips";
+
 export type ItineraryKind = "명소" | "액티비티";
 
 export type ItineraryItem = {
@@ -6,9 +8,24 @@ export type ItineraryItem = {
   kind: ItineraryKind;
 };
 
-export type Days = 1 | 2 | 3;
+export type Days = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
-export type City = {
+/** 근교 당일치기 하루. 목적지 한 곳의 항목을 순서대로 담는다. */
+export type NearbyTrip = {
+  destination: string;
+  items: ItineraryItem[];
+};
+
+export type RecommendedDays = { min: number; max: number };
+
+/** 화면에 그리는 하루. 근교 일차는 destination이 있다. */
+export type DayPlan = {
+  day: number;
+  destination?: string;
+  items: ItineraryItem[];
+};
+
+type BaseCity = {
   id: string;
   name: string;
   country: string;
@@ -16,13 +33,22 @@ export type City = {
   lng: number;
   climate: string;
   bestSeason: string;
-  /** 하루 단위 일정. N일 일정은 앞에서 N개를 쓴다. */
+  /** 도시 안 하루 코스 1~3일차. */
   days: [ItineraryItem[], ItineraryItem[], ItineraryItem[]];
 };
 
-export const DAY_OPTIONS: Days[] = [1, 2, 3];
+export type City = BaseCity & {
+  /** 4~7일차에 쓰는 근교 당일치기 4곳. */
+  nearby: NearbyTrip[];
+  recommendedDays: RecommendedDays;
+};
 
-export const CITIES: City[] = [
+export const DAY_OPTIONS: Days[] = [1, 2, 3, 4, 5, 6, 7];
+
+/** 1~3일차는 도시 안 코스이고 4일차부터 근교다. */
+const CITY_DAYS = 3;
+
+const BASE_CITIES: BaseCity[] = [
   {
     id: "tokyo",
     name: "도쿄",
@@ -71,7 +97,7 @@ export const CITIES: City[] = [
       [
         { name: "몽마르트르 언덕", summary: "사크레쾨르 성당과 화가들의 광장이 있는 언덕 마을입니다.", kind: "명소" },
         { name: "마레 지구 골목 탐방", summary: "작은 갤러리와 팔라펠 가게가 모인 오래된 동네입니다.", kind: "액티비티" },
-        { name: "베르사유 궁전", summary: "기차로 가까운 곳에 있는 화려한 궁전과 정원입니다.", kind: "명소" },
+        { name: "생마르탱 운하", summary: "수문과 철제 다리가 이어진 운하를 따라 카페에서 쉬어 갑니다.", kind: "명소" },
       ],
     ],
   },
@@ -121,7 +147,7 @@ export const CITIES: City[] = [
         { name: "짐 톰슨의 집", summary: "태국 전통 목조 가옥에 실크 컬렉션을 전시합니다.", kind: "명소" },
       ],
       [
-        { name: "담넌 사두악 수상시장", summary: "배 위에서 음식과 과일을 사고파는 시장입니다.", kind: "액티비티" },
+        { name: "짜뚜짝 주말시장", summary: "의류, 소품, 먹거리 가게 만 곳이 모인 큰 주말시장입니다.", kind: "액티비티" },
         { name: "룸피니 공원", summary: "도심 속 공원에서 대형 도마뱀과 산책객을 만납니다.", kind: "명소" },
         { name: "태국 전통 마사지", summary: "하루를 마무리하며 받는 전신 마사지입니다.", kind: "액티비티" },
       ],
@@ -147,9 +173,9 @@ export const CITIES: City[] = [
         { name: "파스테이스 드 벨렝", summary: "수도원 옆 가게에서 갓 구운 에그타르트를 맛봅니다.", kind: "액티비티" },
       ],
       [
-        { name: "신트라 당일 여행", summary: "기차로 가는 동화 같은 궁전과 숲의 마을입니다.", kind: "액티비티" },
-        { name: "페나 궁전", summary: "알록달록한 색으로 칠한 언덕 위의 궁전입니다.", kind: "명소" },
-        { name: "호카 곶", summary: "유럽 대륙의 서쪽 끝 절벽에서 대서양을 봅니다.", kind: "명소" },
+        { name: "LX 팩토리", summary: "옛 공장 단지를 서점과 공방, 카페로 바꾼 창작 거리입니다.", kind: "액티비티" },
+        { name: "아줄레주 박물관", summary: "포르투갈 전통 타일의 역사를 수도원 건물에서 봅니다.", kind: "명소" },
+        { name: "타임아웃 마켓", summary: "유명 식당의 음식을 한곳에서 골라 먹는 큰 식당가입니다.", kind: "액티비티" },
       ],
     ],
   },
@@ -199,8 +225,8 @@ export const CITIES: City[] = [
         { name: "전통 하맘과 모로코 차", summary: "민트 차를 마시고 전통 목욕으로 쉬어 갑니다.", kind: "액티비티" },
       ],
       [
-        { name: "아틀라스 산맥 당일 여행", summary: "베르베르 마을과 폭포가 있는 산으로 다녀옵니다.", kind: "액티비티" },
-        { name: "아가파이 사막 일몰", summary: "도심 가까이에서 낙타를 타고 일몰을 봅니다.", kind: "액티비티" },
+        { name: "메나라 정원", summary: "큰 저수지 너머로 아틀라스 산맥이 보이는 올리브 정원입니다.", kind: "명소" },
+        { name: "마라케시 박물관", summary: "옛 궁전 건물에 모로코 공예와 현대 미술을 전시합니다.", kind: "명소" },
         { name: "타진 요리 교실", summary: "시장에서 재료를 사 직접 타진을 만들어 봅니다.", kind: "액티비티" },
       ],
     ],
@@ -225,8 +251,8 @@ export const CITIES: City[] = [
         { name: "코카 차 시음", summary: "고산병을 가라앉히는 현지 전통 차를 마셔 봅니다.", kind: "액티비티" },
       ],
       [
-        { name: "성스러운 계곡 투어", summary: "오얀타이탐보와 피삭을 도는 안데스 계곡 일정입니다.", kind: "액티비티" },
-        { name: "마라스 소금 계단밭", summary: "수백 년 된 소금 연못이 계단처럼 이어집니다.", kind: "명소" },
+        { name: "잉카 박물관", summary: "잉카의 미라와 도자기, 직물을 전시하는 식민지 시대 저택입니다.", kind: "명소" },
+        { name: "열두 각 돌", summary: "접착제 없이 맞물린 잉카 성벽의 정교한 돌을 가까이서 봅니다.", kind: "명소" },
         { name: "산 페드로 시장", summary: "과일 주스와 현지 음식을 파는 쿠스코의 대표 재래시장입니다.", kind: "액티비티" },
       ],
     ],
@@ -251,7 +277,7 @@ export const CITIES: City[] = [
         { name: "쌀국수와 분짜 맛보기", summary: "하노이식 쌀국수와 분짜를 현지 식당에서 맛봅니다.", kind: "액티비티" },
       ],
       [
-        { name: "하롱베이 당일 투어", summary: "석회암 바위섬 사이를 지나는 유람선 여행입니다.", kind: "액티비티" },
+        { name: "탕롱 황성", summary: "천 년 넘게 이어진 베트남 왕조의 궁성 유적입니다.", kind: "명소" },
         { name: "서호 일몰", summary: "하노이에서 가장 큰 호수 옆 사원에서 해 지는 풍경을 봅니다.", kind: "명소" },
         { name: "기차 거리 커피", summary: "기차가 지나가는 골목 옆 카페에서 에그커피를 마십니다.", kind: "액티비티" },
       ],
@@ -278,21 +304,40 @@ export const CITIES: City[] = [
       ],
       [
         { name: "컴스턴보쉬 식물원", summary: "산자락에 펼쳐진 남아프리카 고유 식물 정원입니다.", kind: "명소" },
-        { name: "스텔렌보쉬 와이너리", summary: "근교의 와인 농장에서 시음을 하고 점심을 먹습니다.", kind: "액티비티" },
+        { name: "시그널 힐 일몰", summary: "도시와 바다가 한눈에 보이는 언덕에서 해 지는 풍경을 봅니다.", kind: "액티비티" },
         { name: "보카프 지구", summary: "알록달록한 집들이 늘어선 케이프말레이 동네입니다.", kind: "명소" },
       ],
     ],
   },
 ];
 
+export const CITIES: City[] = BASE_CITIES.map((city) => ({
+  ...city,
+  nearby: NEARBY_TRIPS[city.id],
+  recommendedDays: RECOMMENDED_DAYS[city.id],
+}));
+
 export function getCity(id: string): City | undefined {
   return CITIES.find((city) => city.id === id);
 }
 
-export function getItinerary(cityId: string, days: Days): ItineraryItem[][] {
+export function getItinerary(cityId: string, days: Days): DayPlan[] {
   const city = getCity(cityId);
   if (!city) return [];
-  return city.days.slice(0, days);
+  const plans: DayPlan[] = [];
+  for (let day = 1; day <= days; day++) {
+    if (day <= CITY_DAYS) {
+      plans.push({ day, items: city.days[day - 1] });
+    } else {
+      const trip = city.nearby[day - CITY_DAYS - 1];
+      plans.push({ day, destination: trip.destination, items: trip.items });
+    }
+  }
+  return plans;
+}
+
+export function formatRecommendedDays({ min, max }: RecommendedDays): string {
+  return `추천 ${min}~${max}일`;
 }
 
 export function formatLatitude(lat: number): string {

@@ -23,10 +23,10 @@ test("도시를 고르면 일정이 나오고 일수를 바꿔도 도시를 바�
   await expect(page.getByRole("heading", { name: "파리" })).toBeVisible();
   await expect(page.getByText("1일차")).toBeVisible();
 
-  await page.getByRole("tab", { name: "3일" }).click();
-  await expect(page.getByText("3일차")).toBeVisible();
+  await page.getByRole("combobox", { name: "여행 일수" }).selectOption("5");
+  await expect(page.getByText("5일차 · 근교: 닛코").or(page.getByText("5일차 · 근교: 지베르니"))).toBeVisible();
 
   await list.getByRole("button", { name: "케이프타운" }).click();
   await expect(page.getByRole("heading", { name: "케이프타운" })).toBeVisible();
-  await expect(page.getByText("3일차")).toBeVisible();
+  await expect(page.getByText("5일차 · 근교: 하마너스").or(page.getByText("5일차 · 근교: 프란슈훅"))).toBeVisible();
 });

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "원클릭 여행플래너",
-  description: "지구본에서 도시를 누르면 바로 1~3일 일정이 나오는 여행 탐색 서비스",
+  description: "지구본에서 도시를 누르면 바로 1~7일 일정이 나오는 여행 탐색 서비스",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -19,11 +19,12 @@ import {
 } from "@/components/ui/card";
 import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select";
 import {
   CITIES,
   DAY_OPTIONS,
   formatLatitude,
+  formatRecommendedDays,
   getCity,
   getItinerary,
   type Days,
@@ -131,17 +132,22 @@ export function CityExplorer() {
                 <CardDescription>
                   {city.country} · {formatLatitude(city.lat)} · {city.climate}, {city.bestSeason}
                 </CardDescription>
+                <p className="text-xs text-muted-foreground">
+                  {formatRecommendedDays(city.recommendedDays)}
+                </p>
               </CardHeader>
               <CardContent>
-                <Tabs value={String(days)} onValueChange={(v) => setDays(Number(v) as Days)}>
-                  <TabsList aria-label="여행 일수">
-                    {DAY_OPTIONS.map((d) => (
-                      <TabsTrigger key={d} value={String(d)}>
-                        {d}일
-                      </TabsTrigger>
-                    ))}
-                  </TabsList>
-                </Tabs>
+                <NativeSelect
+                  aria-label="여행 일수"
+                  value={days}
+                  onChange={(e) => setDays(Number(e.target.value) as Days)}
+                >
+                  {DAY_OPTIONS.map((d) => (
+                    <NativeSelectOption key={d} value={d}>
+                      {d}일
+                    </NativeSelectOption>
+                  ))}
+                </NativeSelect>
                 <div className="mt-3">
                   {email ? (
                     <Button
@@ -161,16 +167,21 @@ export function CityExplorer() {
               </CardContent>
             </Card>
 
-            {itinerary.map((items, index) => (
-              <Card key={index}>
+            {itinerary.map((plan) => (
+              <Card key={plan.day}>
                 <CardHeader>
-                  <CardTitle>{index + 1}일차</CardTitle>
+                  <CardTitle>
+                    {plan.destination
+                      ? `${plan.day}일차 · 근교: ${plan.destination}`
+                      : `${plan.day}일차`}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="flex flex-col gap-4">
-                    {items.map((item) => (
+                  <ol className="flex flex-col gap-4">
+                    {plan.items.map((item, order) => (
                       <li key={item.name} className="flex flex-col gap-1">
                         <div className="flex items-center gap-2">
+                          <span className="text-sm text-muted-foreground">{order + 1}.</span>
                           <span className="font-medium">{item.name}</span>
                           <Badge variant={item.kind === "명소" ? "secondary" : "outline"}>
                             {item.kind}
@@ -179,7 +190,7 @@ export function CityExplorer() {
                         <p className="text-sm text-muted-foreground">{item.summary}</p>
                       </li>
                     ))}
-                  </ul>
+                  </ol>
                 </CardContent>
               </Card>
             ))}
@@ -189,7 +200,7 @@ export function CityExplorer() {
             <EmptyHeader>
               <EmptyTitle>가고 싶은 도시를 눌러 보세요</EmptyTitle>
               <EmptyDescription>
-                지구본을 돌려 도시를 누르면 바로 1~3일 일정이 나와요.
+                지구본을 돌려 도시를 누르면 바로 1~7일 일정이 나와요.
               </EmptyDescription>
             </EmptyHeader>
           </Empty>
